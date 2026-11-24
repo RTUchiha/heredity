@@ -38,13 +38,13 @@ eyebrow:'Heredity · Chapter 1 · Meiosis',
 slides:[
 
 /* 1 ─────────────────────────────── */
-{sec:'1.3',title:'Why Cells Halve Their Chromosomes',caption:'Chromosomes in each body cell, generation after generation',
-text:`<p data-step="0">A <b>chromosome</b> is a long DNA molecule. It carries many genes. A human body cell has 46 chromosomes.</p>
-<p data-step="0">Most eukaryotes (organisms whose cells have a nucleus) reproduce sexually. A cell from one parent joins with a cell from the other parent. These two cells are <b>gametes</b> (sperm and egg).</p>
+{sec:'1.3',title:'Why Cells Halve Their Chromosomes',caption:'Chromosomes per body cell over four generations',
+text:`<p data-step="0">A <b>chromosome</b> is one long DNA molecule that carries many genes. A human body cell has 46 chromosomes.</p>
+<p data-step="0">Most <b>eukaryotes</b> (organisms whose cells have a nucleus) reproduce sexually. A cell from one parent fuses with a cell from the other parent. The two cells that fuse are <b>gametes</b>: sperm cells and egg cells.</p>
 <p data-step="1">Suppose that each gamete had 46 chromosomes. Then the child would have 46 + 46 = 92 chromosomes.</p>
-<p data-step="2">The number would double in each generation: 92, 184, 368. A species cannot continue in this way.</p>
-<p data-step="3"><b>Meiosis</b> is the cell division that makes gametes. Each gamete gets half the number of chromosomes. 23 + 23 = 46, so the number stays the same in each generation.</p>
-<p data-step="3">Meiosis is similar to mitosis in many ways. In both, the chromosomes line up at the middle of the cell. Then microtubules pull them to the two ends of the cell. Meiosis also has important differences from mitosis. This deck shows them.</p>`,
+<p data-step="2">In each new generation, the number would double again: 184, then 368. A species cannot continue with a chromosome number that doubles in each generation.</p>
+<p data-step="3"><b>Meiosis</b> is the cell division that makes gametes. Meiosis halves the chromosome number, so each human gamete has 23 chromosomes. 23 + 23 = 46, so the number stays the same in each generation.</p>
+<p data-step="3">Meiosis has steps in common with mitosis. In both, the chromosomes align at the middle of the cell. Then <b>microtubules</b> (thin protein tubes) move them to the two ends of the cell. Meiosis differs from mitosis in two main ways. Meiosis has two divisions, and its first division separates pairs of chromosomes.</p>`,
 star:'Half + half = whole: 23 + 23 = 46.',starStep:3,
 scene(H){const s=ST();const base=322,k=.68;
   cap(s,170,36,'If gametes had 46');cap(s,470,36,'With meiosis');
@@ -68,15 +68,15 @@ scene(H){const s=ST();const base=322,k=.68;
   ];}},
 
 /* 2 ─────────────────────────────── */
-{sec:'1.3',title:'Meiosis in Five Moves',caption:'After Fig. 1.3.1 · 2N = 4 model: one long pair and one short pair · blue = from dad, orange = from mom',
-text:`<p data-step="0">A cell that will go through meiosis is a <b>meiocyte</b>. A meiocyte is <b>diploid (2N)</b>: it has two sets of chromosomes, one set from each parent. The two matching chromosomes of a pair are <b>homologous chromosomes</b> (homologs). Homologs carry the same genes in the same order.</p>
-<p data-step="1">First, the meiocyte grows and copies each chromosome, as a cell does before mitosis. Each copied chromosome has two identical <b>sister chromatids</b>. A <b>centromere</b> holds the sisters together.</p>
-<p data-step="2">Then meiosis has two divisions. In <b>Meiosis I</b>, the homologs find each other and pair up.</p>
-<p data-step="3">While they are paired, homologs can exchange parts. This exchange is <b>crossing over</b>.</p>
-<p data-step="4">At the end of Meiosis I, the homologs separate into two cells. Each cell has one set of chromosomes. It is <b>haploid (1N)</b>.</p>
-<p data-step="5">In <b>Meiosis II</b>, the sister chromatids separate. After two divisions of the cytoplasm, there are four cells. Each cell has a single copy of each chromosome.</p>
-<p data-step="5" class="note">Most multicellular organisms use meiosis to make gametes. Some single-celled eukaryotes, such as yeast, use meiosis to enter the haploid part of their life cycle. Before meiosis, a cell that will become an egg is an <b>oocyte</b>. A cell that will become sperm is a <b>spermatocyte</b>.</p>`,
-star:'Meiosis I splits the Pairs. Meiosis II splits the Sisters.',starStep:5,
+{sec:'1.3',title:'Meiosis in Five Moves',caption:'After Fig. 1.3.1 · 2n = 4 model: one long pair and one short pair · blue = from dad, orange = from mom',
+text:`<p data-step="0">A <b>meiocyte</b> is a cell that will divide by meiosis. A meiocyte is <b>diploid (2n)</b>: it has two sets of chromosomes, one set from each parent. The two chromosomes of a pair are <b>homologous chromosomes</b>, or <b>homologs</b>. Homologs carry the same genes in the same order.</p>
+<p data-step="1">First, the meiocyte grows and copies its DNA, as a cell does before mitosis. A <b>replicated chromosome</b> has two identical <b>sister chromatids</b>. A <b>centromere</b> holds the two sister chromatids together.</p>
+<p data-step="2">Meiosis then has two divisions. In <b>Meiosis I</b>, each chromosome finds its homolog, and the two homologs pair.</p>
+<p data-step="3">Paired homologs exchange segments of DNA. The exchange is <b>crossing over</b>.</p>
+<p data-step="4">At the end of Meiosis I, the two homologs of each pair go into different cells. Each of the two cells has one set of chromosomes, so each cell is <b>haploid (1n)</b>.</p>
+<p data-step="5">In <b>Meiosis II</b>, the sister chromatids separate. After two divisions of the cytoplasm, there are four cells. Each cell has one copy of each chromosome.</p>
+<p data-step="5" class="note">Most multicellular organisms use meiosis to make gametes. Some single-celled eukaryotes, such as yeast, use meiosis to enter the haploid part of their life cycle. An <b>oocyte</b> is a cell that will become an egg. A <b>spermatocyte</b> is a cell that will become sperm.</p>`,
+star:'Meiosis I separates the Pairs. Meiosis II separates the Sisters.',starStep:5,
 scene(H){const s=ST();
   const A=H.cell(s,{x:320,y:200,r:130});
   const B=[195,445].map(x=>{const c=H.cell(s,{x,y:200,r:80.6});H.T(c,{r:90},{d:0});H.O(c,0,{d:0});return c});
@@ -88,23 +88,23 @@ scene(H){const s=ST();
   const spark=H.g(s);[[320,173]].forEach(([x,y])=>[0,45,90,135].forEach(a=>{const r=a*Math.PI/180;
     H.E('line',{x1:x-9*Math.cos(r),y1:y-9*Math.sin(r),x2:x+9*Math.cos(r),y2:y+9*Math.sin(r),st:'stroke:var(--hi);stroke-width:3;stroke-linecap:round'},spark)}));H.O(spark,0,{d:0});
   return [
-    ()=>{all.forEach((c,i)=>H.O(c,1,{at:i*120}));say('Meiocyte · 2N · 4 chromosomes')},
-    ()=>{all.forEach(c=>H.setChr(c,'x',{d:1200}));say('Copy: each chromosome now has 2 sister chromatids')},
-    ()=>{H.T(bL,{x:303,y:150},{d:1100});H.T(oL,{x:337,y:150},{d:1100});H.T(oS,{x:303,y:255},{d:1100});H.T(bS,{x:337,y:255},{d:1100});say('Meiosis I: homologs pair up')},
-    ()=>{H.O(spark,1,{d:200});H.after(400,()=>{tipOn({d:500});H.O(spark,0,{d:400})});say('Crossing over: homologs exchange parts')},
-    ()=>{H.cleave(A,125,.62,{d:1500});H.T(bL,{x:182,y:200},{d:1300});H.T(oS,{x:210,y:200},{d:1300});H.T(oL,{x:432,y:200},{d:1300});H.T(bS,{x:460,y:200},{d:1300});say('End of Meiosis I: 2 cells, each 1N')},
+    ()=>{all.forEach((c,i)=>H.O(c,1,{at:i*120}));say('Meiocyte · 2n · 4 chromosomes')},
+    ()=>{all.forEach(c=>H.setChr(c,'x',{d:1200}));say('S phase: each chromosome now has 2 sister chromatids')},
+    ()=>{H.T(bL,{x:303,y:150},{d:1100});H.T(oL,{x:337,y:150},{d:1100});H.T(oS,{x:303,y:255},{d:1100});H.T(bS,{x:337,y:255},{d:1100});say('Meiosis I: homologs pair')},
+    ()=>{H.O(spark,1,{d:200});H.after(400,()=>{tipOn({d:500});H.O(spark,0,{d:400})});say('Crossing over: homologs exchange segments')},
+    ()=>{H.cleave(A,125,.62,{d:1500});H.T(bL,{x:182,y:200},{d:1300});H.T(oS,{x:210,y:200},{d:1300});H.T(oL,{x:432,y:200},{d:1300});H.T(bS,{x:460,y:200},{d:1300});say('End of Meiosis I: 2 cells, each 1n')},
     ()=>{H.O(A,0,{d:0});B.forEach(c=>H.O(c,1,{d:0}));B.forEach(c=>H.cleave(c,78,.62,{d:1500}));
       [[bL,195,191],[oS,195,213],[oL,445,191],[bS,445,213]].forEach(([c,x,y])=>{H.T(c,{x,y,r:90},{d:700});H.after(650,()=>{H.setChr(c,'apart',{D:70,d:1200});H.after(1250,()=>relax(c,0,{d:700}))})});
       say('End of Meiosis II: 4 haploid cells, all different')},
   ];}},
 
 /* 3 ─────────────────────────────── */
-{sec:'1.3',title:'Prophase I: Homologs Pair Up',caption:'After Fig. 1.3.5 · one homologous pair, nuclear envelope dashed',
-text:`<p data-step="0"><b>Prophase I</b> is the first stage of Meiosis I. It is long, so biologists divide it into five substages. In <b>leptotene</b>, the copied chromosomes condense and become visible as thin threads. The centrosomes start to move to opposite ends (poles) of the cell.</p>
-<p data-step="1">In <b>zygotene</b>, each chromosome pairs with its homolog. This pairing is <b>synapsis</b> (the homologs <b>synapse</b>). Proteins bind to both homologs along their full length. These proteins make the <b>synaptonemal complex</b>. The word synapse means junction.</p>
-<p data-step="2">In <b>pachytene</b>, synapsis is complete. The paired homologs are a <b>bivalent</b>. A bivalent has four chromatids, so it is also a <b>tetrad</b>. Crossing over occurs inside the synaptonemal complex.</p>
-<p data-step="3">In <b>diplotene</b>, the synaptonemal complex disappears and the tetrads become clear. The homologs move apart a little. They stay joined where crossing over occurred. Each joining point is a <b>chiasma</b> (plural: chiasmata).</p>
-<p data-step="4">In <b>diakinesis</b>, the chromatids get thicker and shorter. The nuclear membrane breaks down. The spindle fibres start to form.</p>`,
+{sec:'1.3',title:'Prophase I: Homologs Pair',caption:'After Fig. 1.3.5 · one homologous pair, nuclear envelope dashed',
+text:`<p data-step="0"><b>Prophase I</b> is the first stage of Meiosis I. Prophase I takes a long time. Biologists divide it into five substages. In <b>leptotene</b>, the replicated chromosomes condense into thin visible threads. The <b>centrosomes</b> (the structures that organize the spindle) move toward the two ends of the cell, the <b>poles</b>.</p>
+<p data-step="1">In <b>zygotene</b>, each chromosome attaches to its homolog along its full length. The attachment is <b>synapsis</b>, and the homologs <b>synapse</b> (synapse means junction). Proteins bind to both homologs and make a protein ladder between them, the <b>synaptonemal complex</b>.</p>
+<p data-step="2">In <b>pachytene</b>, synapsis is complete. The two synapsed homologs form a <b>bivalent</b>. A bivalent has four chromatids, so biologists also call it a <b>tetrad</b>. Crossing over occurs inside the synaptonemal complex.</p>
+<p data-step="3">In <b>diplotene</b>, the synaptonemal complex disappears and the four chromatids become visible. The homologs move a small distance apart. They stay attached where crossing over occurred. Each attachment point is a <b>chiasma</b> (plural: <b>chiasmata</b>).</p>
+<p data-step="4">In <b>diakinesis</b>, the chromatids become shorter and thicker. The <b>nuclear envelope</b> (the membrane around the nucleus) dissolves. The <b>spindle fibres</b> (bundles of microtubules) start to form.</p>`,
 star:'Lazy Zebras Pack Dinner Daily: Leptotene, Zygotene, Pachytene, Diplotene, Diakinesis.',starStep:4,
 scene(H){const s=ST();
   const nuc=H.nucleus(s,320,190,152);
@@ -136,12 +136,12 @@ scene(H){const s=ST();
 
 /* 4 ─────────────────────────────── */
 {sec:'1.3',title:'Crossing Over',caption:'After Fig. 1.3.6 · gene A/a near the top, gene B/b near the bottom',
-text:`<p data-step="0">In pachytene, the four chromatids of a bivalent lie side by side. Chromatids of the same homolog are sister chromatids. Chromatids of different homologs are <b>non-sister chromatids</b>.</p>
-<p data-step="0">An <b>allele</b> is one version of a gene. The blue homolog carries alleles A and B. The orange homolog carries alleles a and b. Homologs have the same genes, but they can have different alleles.</p>
-<p data-step="1">DNA repair enzymes cut the DNA of two non-sister chromatids. The cuts are at almost the same location on both chromatids.</p>
-<p data-step="2">The enzymes then join each piece to the other non-sister chromatid with covalent (strong chemical) bonds. The point where the chromatids cross is a <b>chiasma</b>. The chiasmata hold the homologs together during Meiosis I. This helps each pair to point the correct way and separate correctly.</p>
-<p data-step="3">The new arrangement stays until the end of meiosis. Two chromatids keep the parent combinations, AB and ab. Two chromatids have new combinations, Ab and aB. These are <b>recombinant</b> chromatids. This change of allele combinations is <b>recombination</b>.</p>
-<p data-step="3">Crossing over makes genetic diversity. Over many generations, natural selection acts on this diversity. This is part of evolution.</p>`,
+text:`<p data-step="0">In pachytene, the four chromatids of a bivalent lie side by side. Two chromatids from the same homolog are sister chromatids. Two chromatids from different homologs are <b>non-sister chromatids</b>.</p>
+<p data-step="0">An <b>allele</b> is one version of a gene. The blue homolog carries alleles A and B. The orange homolog carries alleles a and b. Homologs carry the same genes, but their alleles can differ.</p>
+<p data-step="1"><b>DNA repair enzymes</b> (proteins that repair DNA) cut two non-sister chromatids. The two cuts are at almost the same location.</p>
+<p data-step="2">The enzymes then join each cut end to the other non-sister chromatid with <b>covalent bonds</b> (strong chemical bonds). The point where the two chromatids cross is a chiasma. Chiasmata hold the homologs together during Meiosis I. As a result, each pair aligns in the correct direction and separates correctly.</p>
+<p data-step="3">The new arrangement stays until the end of meiosis. Two chromatids keep the parental combinations, AB and ab. The two chromatids with new combinations, Ab and aB, are <b>recombinant</b> chromatids. A change in allele combinations is <b>recombination</b>.</p>
+<p data-step="3">So crossing over increases <b>genetic diversity</b> (the differences between the individuals of a population). Over many generations, <b>natural selection</b> acts on that diversity. Allele combinations that help survival and reproduction become more common. In this way, populations <b>evolve</b> (change over time).</p>`,
 star:'CROSSing over = non-sisters CROSS and swap ends.',starStep:3,
 scene(H){const s=ST();const top=70,bot=320,brk=210,cy=150;
   const X={c1:250,c2:280,c3:360,c4:390};
@@ -182,12 +182,12 @@ scene(H){const s=ST();const top=70,bot=320,brk=210,cy=150;
   ];}},
 
 /* 5 ─────────────────────────────── */
-{sec:'1.3',title:'Metaphase I: Pairs Line Up',caption:'Spindle fibres from each pole · each pair can face either way',
-text:`<p data-step="0">In <b>Metaphase I</b>, the tetrads line up on the <b>metaphase plate</b>, the plane across the middle (equator) of the cell. They line up as pairs, in double file. In mitosis, the chromosomes line up one by one, in single file.</p>
-<p data-step="1">Each homolog attaches to <b>spindle fibres</b> (microtubules) from one pole. Its two sister chromatids attach to fibres from the same pole. The other homolog attaches to fibres from the opposite pole.</p>
-<p data-step="2">The direction of each pair is random. The direction of one pair does not control the direction of another pair. So chromosomes from dad and from mom mix in the gametes.</p>
-<p data-step="3">With n pairs, there are 2<sup>n</sup> possible combinations of chromosomes. A human has 23 pairs. So one person can make 2<sup>23</sup> = 8,388,608 combinations, before crossing over adds more.</p>
-<p data-step="3">This random sorting is the basis of Mendel’s second law, the <b>Law of Independent Assortment</b>. Genes on different chromosomes sort independently.</p>`,
+{sec:'1.3',title:'Metaphase I: Pairs Align',caption:'Spindle fibres from each pole · each pair can face either way',
+text:`<p data-step="0">In <b>Metaphase I</b>, the bivalents align on the <b>metaphase plate</b>, the plane across the middle (equator) of the cell. They align as pairs, in double file. In mitosis, chromosomes align one at a time, in single file.</p>
+<p data-step="1">Each homolog attaches to spindle fibres from one pole. Both of its sister chromatids attach to fibres from that same pole. The other homolog attaches to fibres from the opposite pole.</p>
+<p data-step="2">The direction of each pair is random. The direction of one pair has no effect on the direction of another pair. As a result, each gamete gets a mixture of chromosomes from dad and from mom.</p>
+<p data-step="3">With n pairs, there are 2<sup>n</sup> possible combinations of chromosomes. Humans have 23 pairs, so one person can make 2<sup>23</sup> = 8,388,608 combinations. Crossing over makes even more combinations.</p>
+<p data-step="3">Random alignment is the basis of Mendel’s second law, the <b>Law of Independent Assortment</b>. Gregor Mendel found the laws of heredity with pea plants in the 1860s. Genes on different chromosomes go into gametes independently of each other.</p>`,
 star:'Metaphase I = pairs, double file. Independent assortment happens here.',starStep:3,
 scene(H){const s=ST();const cx=320,cy=175,r=150,yL=115,yS=235,PL=[195,cy],PR=[445,cy];
   H.E('circle',{cx,cy,r,cls:'cellfill',st:'stroke:var(--ink);stroke-width:2.5'},s);
@@ -215,11 +215,11 @@ scene(H){const s=ST();const cx=320,cy=175,r=150,yL=115,yS=235,PL=[195,cy],PR=[44
 
 /* 6 ─────────────────────────────── */
 {sec:'1.3',title:'Anaphase I: Homologs Separate',caption:'Long pair: A on the blue homolog, a on the orange homolog',
-text:`<p data-step="0">At the end of Metaphase I, the chiasmata still hold each pair together.</p>
-<p data-step="1">In <b>Anaphase I</b>, the chiasmata dissolve. The proteins that held the homologs together are released.</p>
-<p data-step="2">The spindle fibres pull the two homologs of each pair to opposite poles. One member of each pair goes to each future daughter cell.</p>
-<p data-step="2">The centromeres do not divide. The sister chromatids stay joined. So a complete copied chromosome moves to each pole.</p>
-<p data-step="3">This is the physical basis of Mendel’s first law, the <b>Law of Equal Segregation</b>. The two alleles of a gene (A and a) separate into different cells. Each gamete gets one allele of each gene.</p>`,
+text:`<p data-step="0">At the end of Metaphase I, chiasmata still hold the homologs of each pair together.</p>
+<p data-step="1">In <b>Anaphase I</b>, the chiasmata dissolve. The proteins that held the homologs together detach.</p>
+<p data-step="2">Spindle fibres move the two homologs of each pair to opposite poles. One homolog of each pair goes to each future daughter cell.</p>
+<p data-step="2">The centromeres do not divide, so the sister chromatids stay joined. Each pole gets complete replicated chromosomes.</p>
+<p data-step="3">Anaphase I is the physical basis of Mendel’s first law, the <b>Law of Equal Segregation</b>. The two alleles of a gene, A and a, go into different cells. Each gamete gets one allele of each gene.</p>`,
 star:'Anaphase I: homologs Apart. Sisters stay joined.',starStep:3,
 scene(H){const s=ST();const cx=320,cy=175,r=150,yL=115,yS=235,PL=[185,cy],PR=[455,cy];
   H.E('circle',{cx,cy,r,cls:'cellfill',st:'stroke:var(--ink);stroke-width:2.5'},s);
@@ -245,19 +245,19 @@ scene(H){const s=ST();const cx=320,cy=175,r=150,yL=115,yS=235,PL=[185,cy],PR=[45
   ];}},
 
 /* 7 ─────────────────────────────── */
-{sec:'1.3',title:'Telophase I and Interkinesis',caption:'Each new cell: 1N, 2 chromosomes, 4 chromatids',
-text:`<p data-step="0">At the end of Anaphase I, one complete set of copied chromosomes is at each pole.</p>
-<p data-step="1">In <b>Telophase I</b>, a nuclear envelope forms again around each set of chromosomes. The spindle fibres disappear.</p>
-<p data-step="2">Then cytokinesis (division of the cytoplasm) occurs. Each new nucleus is now in a separate daughter cell. Each cell has half the number of chromosomes. Each chromosome still has two sister chromatids.</p>
-<p data-step="2">The number of chromosome sets changes from 2N to 1N. So Meiosis I is a <b>reductional division</b>.</p>
-<p data-step="3"><b>Interkinesis</b> is the short stage between Meiosis I and Meiosis II. It is similar to interphase, but there is no S phase. The cell does not copy its chromosomes again.</p>`,
-star:'Meiosis I REDUCES: 2N → 1N. No DNA copy before Meiosis II.',starStep:3,
+{sec:'1.3',title:'Telophase I and Interkinesis',caption:'Each new cell: 1n, 2 chromosomes, 4 chromatids',
+text:`<p data-step="0">At the end of Anaphase I, each pole has one complete set of replicated chromosomes.</p>
+<p data-step="1">In <b>Telophase I</b>, a nuclear envelope forms again around each set. The spindle fibres disappear.</p>
+<p data-step="2">Next, <b>cytokinesis</b> (division of the cytoplasm) makes two daughter cells. Each daughter cell has half the number of chromosomes. Each chromosome still has two sister chromatids.</p>
+<p data-step="2">The number of chromosome sets falls from 2n to 1n. For that reason, Meiosis I is a <b>reductional division</b>.</p>
+<p data-step="3"><b>Interkinesis</b> is the short stage between Meiosis I and Meiosis II. Interkinesis is similar to <b>interphase</b> (the time between two divisions of a body cell). Unlike interphase, interkinesis has no <b>S phase</b> (DNA copy phase), so the cell does not copy its DNA again.</p>`,
+star:'Meiosis I REDUCES: 2n → 1n. No DNA copy before Meiosis II.',starStep:3,
 scene(H){const s=ST();const cy=190,PL=[160,cy],PR=[480,cy];
   const C=H.cell(s,{x:320,y:cy,r:165});const fb=H.g(s);const ps=poles(s,[PL[0],PR[0]],cy);
   const sets=[[222,'dad','dad'],[418,'mom','mom']].map(([x,cl,cs],i)=>[chrom(s,x,160,cl,1,i?{tipsA:[{from:8,color:'dad',show:1}]}:{tipsB:[{from:8,color:'mom',show:1}]}),chrom(s,x,232,cs,0)]);
   const fs=[];[[PL,212],[PR,428]].forEach(([P,x])=>[160,232].forEach(y=>{fs.push(H.fibre(fb,P,[x,y-4]),H.fibre(fb,P,[x,y+4]))}));
   const nucs=[222,418].map(x=>{const n=H.nucleus(s,x,192,74);H.O(n,0,{d:0});return n});
-  const lb=[];[222,418].forEach(x=>{lb.push(H.txt(s,x,316,'1N','lb',{'text-anchor':'middle',st:'font-family:var(--f-math);font-style:italic;font-size:18px'}),H.txt(s,x,336,'2 chromosomes, 4 chromatids','lbs',{'text-anchor':'middle'}))});H.O(lb,0,{d:0});
+  const lb=[];[222,418].forEach(x=>{lb.push(H.txt(s,x,316,'1n','lb',{'text-anchor':'middle',st:'font-family:var(--f-math);font-style:italic;font-size:18px'}),H.txt(s,x,336,'2 chromosomes, 4 chromatids','lbs',{'text-anchor':'middle'}))});H.O(lb,0,{d:0});
   const noS=H.g(s);H.E('circle',{cx:320,cy:cy,r:20,st:'fill:var(--paper);stroke:var(--bad);stroke-width:3'},noS);
   H.txt(noS,320,cy+8,'S','big',{'text-anchor':'middle',st:'font-size:22px'});H.E('line',{x1:306,y1:cy+14,x2:334,y2:cy-14,st:'stroke:var(--bad);stroke-width:3;stroke-linecap:round'},noS);
   H.txt(noS,320,370,'Interkinesis: no S phase, no DNA copying','lb',{'text-anchor':'middle'});H.O(noS,0,{d:0});
@@ -270,12 +270,12 @@ scene(H){const s=ST();const cy=190,PL=[160,cy],PR=[480,cy];
 
 /* 8 ─────────────────────────────── */
 {sec:'1.3',title:'Meiosis II: Sisters Separate',caption:'Both cells from Meiosis I divide at the same time',
-text:`<p data-step="0"><b>Meiosis II</b> is similar to mitosis. Both cells from Meiosis I divide again. In <b>Prophase II</b>, the chromosomes condense, the centrioles move to the poles and the nuclear envelope breaks down.</p>
-<p data-step="1">In <b>Metaphase II</b>, the chromosomes line up at the metaphase plate one by one, in single file. The two sister chromatids attach to spindle fibres from opposite poles.</p>
+text:`<p data-step="0"><b>Meiosis II</b> is similar to mitosis. Both cells from Meiosis I divide again. In <b>Prophase II</b>, the chromosomes condense and the nuclear envelope dissolves. The <b>centrioles</b> (small cylinders inside each centrosome) move to the poles.</p>
+<p data-step="1">In <b>Metaphase II</b>, the chromosomes align on the metaphase plate one at a time, in single file. The two sister chromatids of each chromosome attach to spindle fibres from opposite poles.</p>
 <p data-step="2">In <b>Anaphase II</b>, the centromeres divide. The sister chromatids move to opposite poles.</p>
-<p data-step="3">In <b>Telophase II</b>, the chromosomes start to uncoil. The nuclear envelope and the nucleoli form again. Cytokinesis then makes four daughter cells. Each cell has the haploid number of chromosomes.</p>
-<p data-step="4">Meiosis II separates sister chromatids, as mitosis does. The number of sets does not change (1N stays 1N). So Meiosis II is an <b>equational division</b>. Because of crossing over and independent assortment, the four cells are all different.</p>`,
-star:'EQUational = the number stays EQUal. Meiosis II = mitosis of a 1N cell.',starStep:4,
+<p data-step="3">In <b>Telophase II</b>, the chromosomes start to uncoil. The nuclear envelope and the <b>nucleoli</b> (dense regions inside the nucleus) form again. Cytokinesis then makes four daughter cells. Each daughter cell is haploid.</p>
+<p data-step="4">Meiosis II separates sister chromatids, as mitosis does. The number of chromosome sets stays at 1n. For that reason, Meiosis II is an <b>equational division</b>. Crossing over and independent assortment make the four cells all different.</p>`,
+star:'EQUational = the number stays EQUal. Meiosis II = mitosis of a 1n cell.',starStep:4,
 scene(H){const s=ST();const cy=200,X=[170,470];
   const C=X.map(x=>H.cell(s,{x,y:cy,r:100}));
   const nucs=X.map(x=>H.nucleus(s,x,cy,62));const fb=H.g(s);
@@ -298,10 +298,10 @@ scene(H){const s=ST();const cy=200,X=[170,470];
 
 /* 9 ─────────────────────────────── */
 {sec:'1.3',title:'Counting DNA and Chromosome Sets',caption:'After Fig. 1.3.4 · c = amount of DNA, n = number of chromosome sets',
-text:`<p data-step="0">Two numbers describe the genetic material in a cell. <b>c</b> is the amount of DNA. <b>n</b> is the number of complete chromosome sets. A meiocyte in G1 (before it copies its DNA) is 2c and 2n.</p>
-<p data-step="1">In S phase, the DNA doubles to 4c. A copied chromosome is still one chromosome, because it has one centromere. So the cell stays 2n.</p>
-<p data-step="2">Meiosis I separates the homologs. Each cell gets half the DNA (2c) and one set of chromosomes (1n). In humans, 46 chromosomes become 23.</p>
-<p data-step="3">Meiosis II separates the sister chromatids. Each cell gets half the DNA again (1c). The number of sets stays 1n. A human gamete is 1c (about 3,000 million base pairs of DNA) and 1n = 23.</p>`,
+text:`<p data-step="0">Two numbers describe the genetic material in a cell. The letter <b>c</b> gives the amount of DNA. The letter <b>n</b> gives the number of complete chromosome sets. A meiocyte in <b>G1</b> (the growth phase before DNA copy) is 2c and 2n.</p>
+<p data-step="1">In S phase, the amount of DNA doubles to 4c. A replicated chromosome is still one chromosome, because it has one centromere. So the cell stays 2n.</p>
+<p data-step="2">Meiosis I separates the homologs. Each cell gets half the DNA (2c) and one set of chromosomes (1n). In humans, 46 chromosomes become 23 per cell.</p>
+<p data-step="3">Meiosis II separates the sister chromatids. Each cell gets half the DNA again (1c), and the number of sets stays 1n. A human gamete has 1c of DNA, about 3000 million <b>base pairs</b> (the rungs of the DNA ladder). A human gamete also has 1n = 23 chromosomes.</p>`,
 star:'c counts DNA. n counts sets. S doubles c, not n.',starStep:3,
 scene(H){const s=ST();
   const col=[75,220,390,560];const titles=['G1 meiocyte','after S','after Meiosis I','after Meiosis II'];
@@ -329,11 +329,11 @@ scene(H){const s=ST();
 
 /* 10 ─────────────────────────────── */
 {sec:'1.3',title:'From Meiosis to Gametes',caption:'After Fig. 1.3.7 · polar body formation during gamete maturation',
-text:`<p data-step="0">In animals and plants, the cells from meiosis must mature before they become working gametes.</p>
-<p data-step="1">In male animals, Meiosis I makes two equal cells. In female animals, Meiosis I is not equal. One cell keeps almost all of the cytoplasm. The other cell is very small.</p>
-<p data-step="2">In male animals, the four cells from meiosis are <b>spermatids</b>. In female animals, one large cell becomes the egg. The three small cells are <b>polar bodies</b>.</p>
-<p data-step="3">Each spermatid grows new structures, such as a tail. Then it is a working sperm cell. The egg keeps the maximum amount of nutrients. The polar bodies break down.</p>
-<p data-step="3">In plants, the cells from meiosis divide a few times by mitosis. Then they become male or female gametes.</p>`,
+text:`<p data-step="0">In animals and plants, the cells from meiosis must mature before they function as gametes.</p>
+<p data-step="1">In male animals, Meiosis I makes two cells of equal size. In female animals, the division is unequal. One cell keeps almost all of the cytoplasm, and the other cell is small.</p>
+<p data-step="2">In male animals, the four cells from meiosis are <b>spermatids</b>. In female animals, the large cell becomes the egg. The three small cells are <b>polar bodies</b>.</p>
+<p data-step="3">Each spermatid grows new structures, such as a tail, and becomes a functional sperm cell. Only one cell from each meiosis becomes an egg, so the egg keeps the maximum amount of nutrients. The polar bodies do not become gametes, and they disappear.</p>
+<p data-step="3">In plants, each cell from meiosis divides a few times by mitosis. The new cells then develop into male or female gametes.</p>`,
 star:'Spermatocyte → 4 sperm. Oocyte → 1 egg + 3 polar bodies.',starStep:3,
 scene(H){const s=ST();const ym=110,yf=310;
   cap(s,18,24,'Sperm · male animals','start');cap(s,18,232,'Egg · female animals','start');
@@ -374,7 +374,7 @@ text:`<div class="tblwrap"><table class="tbl"><thead><tr><th></th><th>Mitosis</t
 <tr data-step="3"><td>Chromosomes</td><td>2n → 2n (46 → 46)</td><td>2n → n (46 → 23)</td></tr>
 <tr data-step="3"><td>Daughter cells</td><td>identical to the parent</td><td>all different, half the chromosomes</td></tr>
 </tbody></table></div>`,
-star:'miTosis = my Toes (body cells). meiOsis = makes Ova and sperm.',starStep:3,
+star:'miTosis = my Toes (body cells). meiOsis = makes Ova (egg cells) and sperm.',starStep:3,
 scene(H){const s=ST();const P=[[-21,40,'dad'],[-7,40,'mom'],[7,24,'dad'],[21,24,'mom']];
   cap(s,160,30,'Mitosis');cap(s,480,30,'Meiosis');
   H.E('line',{x1:320,y1:20,x2:320,y2:400,st:'stroke:var(--faint);stroke-width:1.5;stroke-dasharray:4 5'},s);
@@ -399,12 +399,12 @@ scene(H){const s=ST();const P=[[-21,40,'dad'],[-7,40,'mom'],[7,24,'dad'],[21,24,
 
 /* 12 ─────────────────────────────── */
 {sec:'1.3',title:'When Meiosis Goes Wrong',caption:'Nondisjunction in Meiosis I · chromosome 21 shown',
-text:`<p data-step="0">Meiosis explains Mendel’s laws. <b>Segregation</b> occurs in Anaphase I, when the homologs move apart. <b>Independent assortment</b> occurs in Metaphase I, when each pair lines up in a random direction.</p>
-<p data-step="0">Three events make each gamete and each child different: crossing over, independent assortment and random fertilization. Random fertilization means that any sperm can join with any egg.</p>
-<p data-step="1">Sometimes the homologs of a pair do not separate. Both homologs move to the same pole. This error is <b>nondisjunction</b>.</p>
-<p data-step="2">Then one gamete has an extra chromosome (n + 1). The other gamete has no copy of that chromosome (n − 1).</p>
-<p data-step="3">Suppose an n + 1 gamete joins with a normal gamete. The zygote (the first cell of the child) has three copies of that chromosome. Three copies of chromosome 21 cause Down syndrome.</p>`,
-star:'NON-disjunction = the pair does NOT come apart.',starStep:3,
+text:`<p data-step="0">Meiosis explains Mendel’s laws. <b>Segregation</b> occurs in Anaphase I, when the homologs separate. <b>Independent assortment</b> occurs in Metaphase I, when each pair aligns in a random direction.</p>
+<p data-step="0">Crossing over and independent assortment make each gamete different. In random fertilization, any sperm cell can fuse with any egg cell. So all three events make each child different.</p>
+<p data-step="1">Sometimes the two homologs of a pair do not separate. Both homologs move to the same pole. The failure to separate is <b>nondisjunction</b>.</p>
+<p data-step="2">As a result, one cell from Meiosis I has an extra copy of that chromosome (n + 1). The other cell has no copy of that chromosome (n − 1). After Meiosis II, two gametes are n + 1 and two gametes are n − 1.</p>
+<p data-step="3">Suppose that an n + 1 gamete fuses with a normal gamete. The <b>zygote</b> (the first cell of the child) then has three copies of that chromosome. Three copies of chromosome 21 cause <b>Down syndrome</b>.</p>`,
+star:'NON-disjunction = the pair does NOT separate.',starStep:3,
 scene(H){const s=ST();const cy=175,PL=[100,cy],PR=[280,cy];
   const C=H.cell(s,{x:190,y:cy,r:115});const ps=poles(s,[PL[0],PR[0]],cy);const fb=H.g(s);
   const plate=H.E('line',{x1:190,y1:cy-90,x2:190,y2:cy+90,st:'stroke:var(--muted);stroke-width:1.5;stroke-dasharray:5 5'},s);
@@ -430,51 +430,50 @@ scene(H){const s=ST();const cy=175,PL=[100,cy],PR=[280,cy];
 
 /* 13 ─────────────────────────────── */
 {sec:'1.8',title:'Key Terms',wide:true,steps:1,
-text:`<style>.kt{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}.kt div{border:1.5px solid var(--ink);border-radius:12px;padding:10px 12px;background:var(--card)}
-.kt b{display:block;font:800 15px/1.2 var(--f-display);margin-bottom:3px}.kt span{font-size:14.5px;line-height:1.4}.txt .kh{margin-top:4px}</style>
-<h3 class="kh">Cells</h3><div class="kt">
-<div><b>gamete</b><span>A sex cell (sperm or egg). It is haploid.</span></div>
-<div><b>meiocyte</b><span>A diploid (2N) cell that will go through meiosis.</span></div>
-<div><b>oocyte · spermatocyte</b><span>A cell before meiosis that will become an egg · sperm.</span></div>
-<div><b>spermatid</b><span>One of the four male cells from meiosis. It grows a tail and becomes a sperm.</span></div>
-<div><b>polar bodies</b><span>The three small cells from female meiosis. They break down. They do not become eggs.</span></div>
-<div><b>diploid (2N) · haploid (1N)</b><span>Two sets of chromosomes · one set of chromosomes.</span></div></div>
-<h3 class="kh">Chromosomes</h3><div class="kt">
-<div><b>homologous chromosomes</b><span>A pair of chromosomes, one from each parent. Same genes in the same order. The alleles can differ.</span></div>
-<div><b>sister chromatids</b><span>The two identical copies of a copied chromosome, joined at the centromere. At first they carry the same alleles.</span></div>
-<div><b>allele · locus</b><span>A version of a gene · the location of a gene on a chromosome. A diploid cell has up to two alleles at one locus.</span></div>
-<div><b>synapse · synapsis · pair up</b><span>Homologs come together along their full length in Prophase I. This occurs in meiosis, not in mitosis.</span></div>
-<div><b>synaptonemal complex</b><span>The proteins that hold synapsed homologs together. They are released at Anaphase I.</span></div>
-<div><b>bivalent · tetrad</b><span>A synapsed homolog pair. It has four chromatids.</span></div>
-<div><b>crossing over</b><span>Non-sister chromatids break at the same place and join to each other. This makes new allele combinations.</span></div>
-<div><b>chiasma (chiasmata)</b><span>A point where non-sister chromatids cross after crossing over. It holds the homologs together in Meiosis I.</span></div>
-<div><b>nondisjunction</b><span>Chromosomes do not separate. A gamete gets an extra chromosome or none.</span></div></div>
-<h3 class="kh">Prophase I substages</h3><div class="kt">
-<div><b>leptotene</b><span>Chromosomes condense into thin threads.</span></div>
-<div><b>zygotene</b><span>Homologs pair. The synaptonemal complex forms.</span></div>
-<div><b>pachytene</b><span>Synapsis is complete. Crossing over occurs.</span></div>
-<div><b>diplotene</b><span>The synaptonemal complex disappears. Chiasmata become visible.</span></div>
-<div><b>diakinesis</b><span>Chromatids thicken. The nuclear membrane breaks down. Spindle fibres form.</span></div></div>
-<h3 class="kh">Stages and divisions</h3><div class="kt">
-<div><b>Meiosis I · reductional</b><span>Homologs separate. 2N becomes 1N.</span></div>
-<div><b>Meiosis II · equational</b><span>Sister chromatids separate. 1N stays 1N.</span></div>
-<div><b>Metaphase I · II</b><span>Pairs line up in double file · chromosomes line up in single file.</span></div>
-<div><b>Anaphase I · II</b><span>Homologs go to opposite poles · centromeres divide and sisters go to opposite poles.</span></div>
-<div><b>Telophase I · II</b><span>Nuclear envelopes form again. Cytokinesis gives 2 cells · 4 cells.</span></div>
-<div><b>Prophase II</b><span>Chromosomes condense. Centrioles move to the poles. The nuclear envelope breaks down.</span></div>
-<div><b>interkinesis</b><span>The stage between Meiosis I and II. Like interphase, but with no DNA copying.</span></div>
-<div><b>Law of Equal Segregation</b><span>Mendel’s first law. The two alleles of a gene separate into different gametes, in equal numbers.</span></div>
-<div><b>Law of Independent Assortment</b><span>Mendel’s second law. Genes on different chromosomes sort into gametes independently.</span></div></div>`},
+text:`<h3>Cell types in meiosis</h3><div class="terms">
+<div class="term"><b>gamete</b>A sex cell: a sperm cell or an egg cell. A gamete is haploid.</div>
+<div class="term"><b>meiocyte</b>A diploid cell that will divide by meiosis.</div>
+<div class="term"><b>oocyte · spermatocyte</b>A cell before meiosis that will become an egg cell · a sperm cell.</div>
+<div class="term"><b>spermatid</b>One of the four male cells from meiosis. A spermatid grows a tail and becomes a sperm cell.</div>
+<div class="term"><b>polar body</b>One of the three small cells from female meiosis. Polar bodies do not become eggs.</div>
+<div class="term"><b>diploid (2n) · haploid (1n)</b>A cell with two sets of chromosomes · a cell with one set of chromosomes.</div></div>
+<h3>Chromosome pairs and crossing over</h3><div class="terms">
+<div class="term"><b>homologs</b>Homologous chromosomes: a pair of chromosomes, one from each parent, with the same genes in the same order. Their alleles can differ.</div>
+<div class="term"><b>sister chromatids</b>The two identical copies in a replicated chromosome, joined at the centromere. At first, sister chromatids carry the same alleles.</div>
+<div class="term"><b>allele · locus</b>A version of a gene · the location of a gene on a chromosome. A diploid cell has a maximum of two alleles at one locus.</div>
+<div class="term"><b>synapsis · synapse</b>The close attachment of homologs along their full length in Prophase I. Synapsis occurs in meiosis only, never in mitosis.</div>
+<div class="term"><b>synaptonemal complex</b>The protein ladder that holds synapsed homologs together. The proteins detach at Anaphase I.</div>
+<div class="term"><b>bivalent (tetrad)</b>Two synapsed homologs. A bivalent has four chromatids.</div>
+<div class="term"><b>crossing over</b>Two non-sister chromatids break at the same location and exchange segments. Crossing over makes new allele combinations.</div>
+<div class="term"><b>chiasma (plural chiasmata)</b>A point where two non-sister chromatids cross after crossing over. Chiasmata hold the homologs together in Meiosis I.</div>
+<div class="term"><b>recombination</b>A change in the allele combinations on a chromosome. Recombinant chromatids carry the new combinations.</div>
+<div class="term"><b>nondisjunction</b>Homologs or sister chromatids fail to separate. Some gametes then get an extra chromosome, and other gametes get none.</div></div>
+<h3>The five Prophase I substages</h3><div class="terms">
+<div class="term"><b>leptotene</b>The replicated chromosomes condense into thin threads.</div>
+<div class="term"><b>zygotene</b>Homologs pair, and the synaptonemal complex forms.</div>
+<div class="term"><b>pachytene</b>Synapsis is complete, and crossing over occurs.</div>
+<div class="term"><b>diplotene</b>The synaptonemal complex disappears, and the chiasmata become visible.</div>
+<div class="term"><b>diakinesis</b>The chromatids thicken, the nuclear envelope dissolves and spindle fibres form.</div></div>
+<h3>Divisions, stages and Mendel’s laws</h3><div class="terms">
+<div class="term"><b>Meiosis I · reductional division</b>The homologs separate, and each cell goes from 2n to 1n.</div>
+<div class="term"><b>Meiosis II · equational division</b>The sister chromatids separate, and each cell stays at 1n.</div>
+<div class="term"><b>Metaphase I · Metaphase II</b>Pairs align in double file · single chromosomes align in single file.</div>
+<div class="term"><b>Anaphase I · Anaphase II</b>Homologs move to opposite poles · centromeres divide and sister chromatids move to opposite poles.</div>
+<div class="term"><b>Telophase I · Telophase II</b>Nuclear envelopes form again, and cytokinesis makes 2 cells · 4 cells.</div>
+<div class="term"><b>Prophase II</b>The chromosomes condense, the centrioles move to the poles and the nuclear envelope dissolves.</div>
+<div class="term"><b>interkinesis</b>The short stage between Meiosis I and Meiosis II. Interkinesis has no S phase, so the DNA is not copied again.</div>
+<div class="term"><b>Law of Equal Segregation</b>Mendel’s first law: the two alleles of a gene go into different gametes in equal numbers.</div>
+<div class="term"><b>Law of Independent Assortment</b>Mendel’s second law: genes on different chromosomes go into gametes independently.</div></div>`},
 
 /* 14 ─────────────────────────────── */
 {sec:'1.9',title:'Check Your Understanding',wide:true,steps:1,
 text:`<div class="grid2">
 <div class="qa"><div class="q">1. Does equal segregation of alleles into daughter cells occur in mitosis, in meiosis, or in both?</div><button>Show answer</button><div class="a" hidden>Only in meiosis. Mitosis makes daughter cells that are genetically equal, but it does not separate alleles. Each daughter cell of mitosis keeps both alleles of the parent cell. In meiosis, Anaphase I sends the two alleles of a gene to different cells.</div></div>
-<div class="qa"><div class="q">2. A diploid individual makes gametes. How many alleles of one autosomal gene can a gamete carry? The individual? The whole population of the species?</div><button>Show answer</button><div class="a" hidden>A gamete carries one allele, because it has one set of chromosomes. The diploid individual has a maximum of two alleles at one locus. A population can have many alleles. The size of the population sets the limit.</div></div>
-<div class="qa"><div class="q">3. A human meiocyte is in Metaphase I. How many chromosomes, chromatids and bivalents does it have?</div><button>Show answer</button><div class="a" hidden>46 chromosomes, because there are 46 centromeres. 92 chromatids, because each chromosome is copied. 23 bivalents, because the 46 chromosomes are in 23 pairs.</div></div>
-<div class="qa"><div class="q">4. Which division of meiosis is reductional and which is equational? Give the reason.</div><button>Show answer</button><div class="a" hidden>Meiosis I is reductional, because homologs separate and the cells go from 2N to 1N. Meiosis II is equational, because sister chromatids separate and the cells stay 1N.</div></div>
+<div class="qa"><div class="q">2. A diploid individual makes gametes. How many alleles of one autosomal gene (a gene on a chromosome that is not a sex chromosome) can a gamete carry? The individual? The whole population of the species?</div><button>Show answer</button><div class="a" hidden>A gamete carries one allele, because it has one set of chromosomes. The diploid individual has a maximum of two alleles at one locus. A population can have many alleles. The size of the population sets the limit.</div></div>
+<div class="qa"><div class="q">3. A human meiocyte is in Metaphase I. How many chromosomes, chromatids and bivalents does it have?</div><button>Show answer</button><div class="a" hidden>46 chromosomes, because there are 46 centromeres. 92 chromatids, because each chromosome has two chromatids after S phase. 23 bivalents, because the 46 chromosomes are in 23 pairs.</div></div>
+<div class="qa"><div class="q">4. Which division of meiosis is reductional and which is equational? Give the reason.</div><button>Show answer</button><div class="a" hidden>Meiosis I is reductional, because homologs separate and the cells go from 2n to 1n. Meiosis II is equational, because sister chromatids separate and the cells stay 1n.</div></div>
 <div class="qa"><div class="q">5. A cell has 2n = 4 (two pairs). Without crossing over, how many types of gamete can independent assortment make?</div><button>Show answer</button><div class="a" hidden>2<sup>2</sup> = 4 types. Each pair can face two ways in Metaphase I, and the two pairs are independent.</div></div>
-<div class="qa"><div class="q">6. Sister chromatids carry the same alleles at first. How can two sister chromatids carry different alleles at the end of Prophase I?</div><button>Show answer</button><div class="a" hidden>Crossing over. One sister chromatid exchanges a part with a non-sister chromatid from the homolog. That part can carry a different allele.</div></div>
+<div class="qa"><div class="q">6. Sister chromatids carry the same alleles at first. How can two sister chromatids carry different alleles at the end of Prophase I?</div><button>Show answer</button><div class="a" hidden>Crossing over. One sister chromatid exchanges a segment with a non-sister chromatid from the homolog. The exchanged segment can carry a different allele.</div></div>
 </div>`},
 
 ]});

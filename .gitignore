@@ -8,3 +8,4 @@ __pycache__/
 !slides/src/assets/*.png
 .DS_Store
 .claude/
+reports/

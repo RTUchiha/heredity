@@ -28,13 +28,13 @@ slides:[
 
 /* 1 ─────────────────────────────── */
 {sec:'3.1',title:'The Cell Cycle and Mitosis',caption:'After Fig. 3.1.1 · cell growth, cell division, cell proliferation',
-text:`<p data-step="0">One cell can become many cells. The cell does two things to make this happen.</p>
-<p data-step="1"><b>Growth.</b> The cell gets larger. It makes more of its own parts.</p>
+text:`<p data-step="0">Your body started as one cell. Two processes made all of your other cells: growth and division.</p>
+<p data-step="1"><b>Growth.</b> The cell makes more of its own parts and becomes larger.</p>
 <p data-step="2"><b>Division.</b> The parent cell splits into two <b>daughter cells</b>. Each daughter cell is half the size of the parent cell.</p>
-<p data-step="3">Each daughter cell grows. Then it divides again. The number of cells doubles each time: 1, 2, 4, 8.</p>
-<p data-step="4">Growth and division together are <b>cell proliferation</b>. Your body made all of its cells in this way, from one cell.</p>
-<p data-step="4" class="note">In this chapter: the phases of the cell cycle, the stages of mitosis, why mitosis keeps the genetic information stable, and how much DNA a cell has at each step.</p>`,
-star:'Grow, copy, split. Then do it again.',starStep:4,
+<p data-step="3">Each daughter cell grows and then divides again. Each round of division doubles the number of cells: 1, 2, 4, 8.</p>
+<p data-step="4">Growth and division together are <b>cell proliferation</b>.</p>
+<p data-step="4" class="note">An organism with many cells needs growth and division to develop. <b>Asexual reproduction</b> (reproduction without sex) also needs growth and division.</p>`,
+star:'Grow, copy, split. Repeat.',starStep:4,
 scene(H){const s=document.getElementById('stage');const P=H.g(s);
   const gen=[[[320,210]],[[230,210],[410,210]],[[200,145],[200,275],[440,145],[440,275]],
     [[140,145],[260,145],[140,275],[260,275],[380,145],[500,145],[380,275],[500,275]]];
@@ -53,11 +53,11 @@ scene(H){const s=document.getElementById('stage');const P=H.g(s);
 
 /* 2 ─────────────────────────────── */
 {sec:'3.1',title:'Two Ways to Divide',caption:'Blue = from dad, orange = from mom · 2n = 4 in this model',
-text:`<p data-step="0">Eukaryotes are organisms whose cells have a nucleus. Their cells divide in two different ways.</p>
-<p data-step="1"><b>Mitosis</b> is the vegetative division. One parent cell makes two daughter cells. Each daughter cell gets exactly one copy of each chromosome in the parent cell. The daughter cells are genetically identical to the parent cell.</p>
-<p data-step="2"><b>Meiosis</b> is the reproductive division. It makes <b>gametes</b> (sperm cells and egg cells). Each gamete gets half the number of chromosomes. A cell with one set of chromosomes is <b>haploid</b>.</p>
-<p data-step="3">This deck is about mitosis. Chapter 1 gives the stages of meiosis, because meiosis explains Mendel’s laws.</p>`,
-star:'miTosis = my Toes (body cells). meiOsis = makes Ova and sperm.',starStep:3,
+text:`<p data-step="0"><b>Eukaryotes</b> are organisms whose cells have a nucleus. Eukaryotic cells divide in two ways.</p>
+<p data-step="1"><b>Mitosis</b> makes body cells. One parent cell divides once and makes two daughter cells. Each daughter cell gets one copy of each chromosome of the parent cell. So the daughter cells are genetically identical to the parent cell.</p>
+<p data-step="2"><b>Meiosis</b> makes <b>gametes</b> (sperm cells and egg cells). Each gamete gets half the number of chromosomes of the parent cell. A cell with one set of chromosomes is <b>haploid</b>. A cell with two sets is <b>diploid</b>.</p>
+<p data-step="3">Mitosis is also called the vegetative division. Meiosis is also called the reproductive division.</p>`,
+star:'miTosis = my Toes (body cells). meiOsis = makes Ova (egg cells) and sperm.',starStep:3,
 scene(H){const s=document.getElementById('stage');
   const P2n=[[-21,40,'dad'],[-7,40,'mom'],[7,24,'dad'],[21,24,'mom']];
   const A=H.g(s),B=H.g(s);
@@ -82,14 +82,14 @@ scene(H){const s=document.getElementById('stage');
 
 /* 3 ─────────────────────────────── */
 {sec:'3.2',title:'The Cell Cycle',caption:'After Fig. 3.2.1 · sector size shows the relative time of each phase',
-text:`<p data-step="0">The <b>cell cycle</b> is a pattern that a cell repeats. The cell grows. Then the nucleus divides. Then the cytoplasm divides. The cycle has four phases.</p>
-<p data-step="1"><b>G1 (Gap 1).</b> The cell does its usual work and grows. This growth is important, because a new daughter cell is only half the size of its parent cell.</p>
-<p data-step="2"><b>S (Synthesis).</b> The cell copies (replicates) each chromosome. Each chromosome now has two identical <b>sister chromatids</b>. The chromosomes are not condensed yet.</p>
-<p data-step="3"><b>G2 (Gap 2).</b> The cell grows more. It makes the proteins that it needs for division.</p>
-<p data-step="4"><b>M (Mitosis).</b> The cell divides. One cell becomes two cells.</p>
-<p data-step="5">G1, S and G2 together are <b>interphase</b>. A cell spends most of the cycle in interphase.</p>
-<p data-step="6" class="note">The figure now runs the full cycle again and again.</p>`,
-star:'G1 grow · S copy · G2 get ready · M split.',starStep:5,
+text:`<p data-step="0">The <b>cell cycle</b> is the repeated sequence of cell growth and cell division. The cycle has four phases.</p>
+<p data-step="1"><b>G1 (gap 1).</b> The cell does its usual work and grows. A new daughter cell starts at half the size of its parent, so it must grow before it divides.</p>
+<p data-step="2"><b>S (synthesis).</b> The cell replicates (copies) the DNA of each chromosome. After S, each chromosome has two identical <b>sister chromatids</b>. The chromosomes stay long and thin.</p>
+<p data-step="3"><b>G2 (gap 2).</b> The cell grows more and makes the proteins that division needs.</p>
+<p data-step="4"><b>M (mitosis).</b> The nucleus divides, and then the cytoplasm divides. One cell becomes two cells.</p>
+<p data-step="5">G1, S and G2 together are <b>interphase</b>. Interphase uses most of the time in each cycle. The size of each sector shows the relative time of its phase.</p>
+<p data-step="6">After M, each daughter cell starts the cycle again at G1.</p>`,
+star:'G1 grow · S copy · G2 prepare · M divide.',starStep:5,
 scene(H){const s=document.getElementById('stage');const cx=190,cy=205,R0=100,R1=148;
   const ph=[{n:'G1',a0:10,a1:165,f:'dad-tint',t:'cell growth'},{n:'S',a0:165,a1:275,f:'mom-tint',t:'DNA copying'},{n:'G2',a0:275,a1:330,f:'wash',t:'growth'},{n:'M',a0:330,a1:370,f:'ink',t:''}];
   const W=H.g(s);const secs=ph.map(p=>{const e=H.E('path',{d:H.sectorD(cx,cy,R0,R1,p.a0,p.a1),st:`fill:${H.C(p.f)};stroke:var(--ink);stroke-width:2;fill-opacity:0`},W);return e});
@@ -137,11 +137,11 @@ scene(H){const s=document.getElementById('stage');const cx=190,cy=205,R0=100,R1=
 
 /* 4 ─────────────────────────────── */
 {sec:'3.2',title:'Anatomy of a Replicated Chromosome',caption:'After Fig. 3.2.2 · sister chromatids, centromere, kinetochore',
-text:`<p data-step="0">Before S phase, a chromosome is one long DNA molecule. This is an <b>unreplicated chromosome</b>.</p>
-<p data-step="1">In S phase, the cell copies the DNA. Now there are two identical copies, the <b>sister chromatids</b>. This is a <b>replicated chromosome</b>.</p>
-<p data-step="2">The <b>centromere</b> holds the sister chromatids together. A replicated chromosome is still <b>one</b> chromosome, because it has only one centromere.</p>
-<p data-step="3">The <b>kinetochore</b> is a region on each chromatid. It contains the centromere and proteins. These proteins help the microtubules to bind.</p>
-<p data-step="4"><b>Microtubules</b> are thin tubes of protein. In mitosis, they attach to the kinetochores. Then they move the chromosomes.</p>`,
+text:`<p data-step="0">Before S phase, each chromosome is one long DNA molecule. A chromosome in this state is an <b>unreplicated chromosome</b>.</p>
+<p data-step="1">S phase replicates the DNA. The chromosome now has two identical DNA molecules, the <b>sister chromatids</b>. A chromosome with two sister chromatids is a <b>replicated chromosome</b>.</p>
+<p data-step="2">The <b>centromere</b> holds the sister chromatids together. A replicated chromosome has one centromere, so it counts as one chromosome.</p>
+<p data-step="3">The <b>kinetochore</b> is the region of a chromatid where microtubules attach. The kinetochore contains the centromere and proteins that help the microtubules bind.</p>
+<p data-step="4"><b>Microtubules</b> are thin protein tubes. During mitosis, microtubules attach to the kinetochores and move the chromosomes.</p>`,
 star:'Count the centromeres to count the chromosomes.',starStep:2,
 scene(H){const s=document.getElementById('stage');const X=300,Y=210;
   const mt=H.g(s);const ch=H.chromosome(s,{L1:92,L2:92,w:24,color:'dad',state:'single',x:X,y:Y});
@@ -169,12 +169,12 @@ scene(H){const s=document.getElementById('stage');const X=300,Y=210;
 
 /* 5 ─────────────────────────────── */
 {sec:'3.2',title:'Checkpoints and Cyclins',caption:'After Fig. 3.2.1 · checkpoints and cyclin–CDK pairs',
-text:`<p data-step="0">The cell cycle has <b>checkpoints</b>. At a checkpoint, the cell checks that the last phase is complete and correct. Then it continues.</p>
-<p data-step="1">There are three main checkpoints: the <b>G1 checkpoint</b> (also called the restriction point), the <b>G2 checkpoint</b> and the <b>M checkpoint</b>.</p>
-<p data-step="2"><b>Cyclins</b> are a family of proteins. A cyclin binds to an enzyme called a <b>cyclin-dependent kinase (CDK)</b>. This makes the CDK active. The active CDK moves the cell into the next phase.</p>
-<p data-step="3">Different cyclin–CDK pairs work at different times. For example, cyclin D with CDK4 works in G1. Cyclin B with CDK1 starts mitosis.</p>
-<p data-step="4">If the cell finds a problem, the cycle stops. This stop is an <b>arrest</b>. Two example problems: an error in DNA replication, or a missing protein.</p>
-<p data-step="5">During the arrest, the cell tries to repair the problem. If the repair is good, the cycle continues. If the cell cannot repair the problem, the cell dies.</p>`,
+text:`<p data-step="0">The cell cycle has <b>checkpoints</b>. At each checkpoint, the cell checks the previous phase. The next phase starts only if the previous phase is complete and correct.</p>
+<p data-step="1">The three main checkpoints are the <b>G1 checkpoint</b> (the restriction point), the <b>G2 checkpoint</b> and the <b>M checkpoint</b>.</p>
+<p data-step="2"><b>Cyclins</b> are a family of proteins that control the cell cycle. A cyclin binds to an enzyme, a <b>cyclin-dependent kinase (CDK)</b>, and activates the enzyme. The active CDK moves the cell into the next phase.</p>
+<p data-step="3">Each phase uses a different cyclin–CDK pair. For example, cyclin D with CDK4 acts in G1. Cyclin B with CDK1 starts mitosis.</p>
+<p data-step="4">Example problems are an error in DNA replication or a missing protein. When the cell finds a problem, the cycle stops. The stop is an <b>arrest</b>.</p>
+<p data-step="5">During the arrest, the cell repairs the problem, and then the cycle continues. If the cell cannot repair the problem, the cell dies.</p>`,
 star:'Checkpoint = a gate. Cyclin + CDK = the key.',starStep:2,
 scene(H){const s=document.getElementById('stage');const cx=215,cy=215,R0=72,R1=112;
   const ph=[{n:'G1',a0:10,a1:165,f:'dad-tint'},{n:'S',a0:165,a1:275,f:'mom-tint'},{n:'G2',a0:275,a1:330,f:'wash'},{n:'M',a0:330,a1:370,f:'ink'}];
@@ -213,12 +213,12 @@ scene(H){const s=document.getElementById('stage');const cx=215,cy=215,R0=72,R1=1
 
 /* 6 ─────────────────────────────── */
 {sec:'3.2',title:'Not Every Cell Cycles the Same Way',caption:'Timelines read left to right · block width ≈ time in each phase',
-text:`<p data-step="0">The cycle in the last slides is a general model. Many variants of it exist.</p>
-<p data-step="1"><b>Blood stem cells</b> (hematopoietic stem cells) are in the bone marrow. They make all the other types of blood cells. They go through the cycle again and again, without a stop.</p>
-<p data-step="2"><b>Meiocytes</b> are the cells that do meiosis. They usually have no G2 phase.</p>
-<p data-step="3"><b>Nerve cells</b> stop dividing. They never leave G1. They go into a permanent, non-dividing state called <b>G0</b>.</p>
-<p data-step="4">Some cells do many S phases with no mitosis and no cell division. The DNA amount doubles each time. This is <b>endoreduplication</b>. The larval tissues of the fruit fly <i>Drosophila</i> do this.</p>
-<p data-step="4" class="note">Scientists study the control of the cell cycle closely, because cancer is related to cell division without correct control.</p>`,
+text:`<p data-step="0">Different types of cell use the cell cycle in different ways.</p>
+<p data-step="1"><b>Blood stem cells</b> (hematopoietic stem cells) are in the bone marrow. They make all the other types of blood cell, so they repeat the cycle continuously.</p>
+<p data-step="2"><b>Meiocytes</b> are the cells that do meiosis. Meiocytes usually have no G2 phase.</p>
+<p data-step="3"><b>Nerve cells</b> do not divide. They stay in G1 and then enter a permanent non-dividing state, <b>G0</b>.</p>
+<p data-step="4">Some cells complete many S phases with no mitosis, so their DNA content doubles each time. Repeated S phases without mitosis are <b>endoreduplication</b>. The larval cells of the fruit fly <i>Drosophila</i> are an example.</p>
+<p data-step="4" class="note">Cancer cells divide without correct control, so scientists study cell-cycle control closely.</p>`,
 star:'G0 = zero more divisions.',starStep:3,
 scene(H){const s=document.getElementById('stage');const x0=200,x1=625;
   const col={G1:'dad-tint',S:'mom-tint',G2:'wash',M:'ink',MI:'ink',MII:'ink',G0:'card'};const wd={G1:44,S:32,G2:24,M:14,MI:16,MII:16};
@@ -240,12 +240,12 @@ scene(H){const s=document.getElementById('stage');const x0=200,x1=625;
 
 /* 7 ─────────────────────────────── */
 {sec:'3.3',title:'Mitosis, Stage by Stage',caption:'After Fig. 3.3.1 and 3.4.2 · 2n = 4 · blue = paternal, orange = maternal',
-text:`<p data-step="0"><span class="chip">i</span> <b>Interphase.</b> The cell copied its DNA in S phase. Each chromosome now has two sister chromatids. The chromosomes are long and thin. They are not visible as separate structures yet.</p>
-<p data-step="1"><span class="chip">P</span> <b>Prophase.</b> The replicated chromosomes condense. They become short, thick and visible. The nucleus breaks down. The two centrosomes move to opposite poles and make the spindle of microtubules.</p>
-<p data-step="2"><span class="chip">M</span> <b>Metaphase.</b> Microtubules attach to the kinetochores. The chromosomes line up, one by one, along the middle of the cell. This line is the <b>metaphase plate</b>.</p>
-<p data-step="3"><span class="chip">A</span> <b>Anaphase.</b> The sister chromatids of each chromosome separate. The microtubules pull them to opposite poles. Each chromatid is now a separate chromosome.</p>
-<p data-step="4"><span class="chip">T</span> <b>Telophase.</b> One full set of unreplicated chromosomes is at each pole. A nucleus forms again around each set.</p>
-<p data-step="5"><b>Cytokinesis.</b> The cytoplasm divides. The result is two daughter cells. Each daughter cell has the same chromosomes as the parent cell.</p>`,
+text:`<p data-step="0"><span class="chip">i</span> <b>Interphase.</b> In S phase, the cell replicated each chromosome, so each chromosome has two sister chromatids. The chromosomes are long and thin, so they are not visible as separate structures.</p>
+<p data-step="1"><span class="chip">P</span> <b>Prophase.</b> The replicated chromosomes condense and become short, thick and visible. The nuclear envelope dissolves. The two <b>centrosomes</b> organize microtubules. They move to the opposite ends of the cell, the <b>poles</b>. There they make the <b>spindle</b>, a structure of microtubules.</p>
+<p data-step="2"><span class="chip">M</span> <b>Metaphase.</b> Microtubules from both poles attach to the kinetochores. The chromosomes align in single file on the <b>metaphase plate</b>, the plane across the middle of the cell.</p>
+<p data-step="3"><span class="chip">A</span> <b>Anaphase.</b> The centromere of each chromosome divides, and the sister chromatids separate. The microtubules move the chromatids to opposite poles. Each chromatid is now a chromosome.</p>
+<p data-step="4"><span class="chip">T</span> <b>Telophase.</b> Each pole now has one complete set of unreplicated chromosomes. A nuclear envelope forms around each set.</p>
+<p data-step="5"><b>Cytokinesis.</b> The cytoplasm divides and makes two daughter cells. Each daughter cell has the same chromosomes as the parent cell.</p>`,
 star:'iPMAT: interphase, Prophase = Pack, Metaphase = Middle, Anaphase = Apart, Telophase = Two.',starStep:5,
 scene(H){const s=document.getElementById('stage');const CX=320,CY=212;
   const Cl=H.cell(s,{x:CX,y:CY,r:160});
@@ -285,12 +285,12 @@ scene(H){const s=document.getElementById('stage');const CX=320,CY=212;
 
 /* 8 ─────────────────────────────── */
 {sec:'3.3',title:'Real Cells Do Not Stop Between Stages',caption:'Fig. 3.3.2 · root tip of Vicia faba (broad bean), stained · J. Reischig (2014), CC BY-SA 3.0',
-text:`<p data-step="0">This is a real microscope image. It shows cells from the growing tip of a bean root. A purple stain makes the chromosomes visible.</p>
-<p data-step="1">Most of the cells are in <b>interphase</b>. Their chromosomes are long and thin, so the nucleus looks like a round, grainy ball.</p>
-<p data-step="2">This cell is in <b>prophase</b>. Its chromosomes have condensed into separate threads.</p>
-<p data-step="3">This cell is in <b>anaphase</b>. Two groups of chromatids move to opposite poles. The arms trail behind the centromeres, because the microtubules pull at the centromeres.</p>
-<p data-step="4">Mitosis is a continuous process. A cell does not jump from one stage to the next. The stage names mark points along one smooth movement.</p>`,
-star:'The stage names are labels on a movie, not separate steps.',starStep:4,
+text:`<p data-step="0">The image is a micrograph (a photograph through a microscope) of cells from the tip of a bean root. A purple stain shows the chromosomes.</p>
+<p data-step="1">Most cells are in <b>interphase</b>. Their long, thin chromosomes make each nucleus a round, grainy ball.</p>
+<p data-step="2">The cell at the lower right is in <b>prophase</b>. Its chromosomes are condensed into separate threads.</p>
+<p data-step="3">The cell at the upper left is in <b>anaphase</b>. Two groups of chromatids move to opposite poles. The centromeres lead and the arms trail, because the microtubules pull on the centromeres.</p>
+<p data-step="4">Mitosis is a continuous process. A cell does not jump from one stage to the next. The stage names are labels for points in one smooth process.</p>`,
+star:'Stage names are labels on a continuous process.',starStep:4,
 scene(H){const s=document.getElementById('stage');const k=640/1056;
   H.E('image',{href:'@@asset:vicia-root-tip.jpg@@',x:0,y:0,width:640,height:676*k},s);
   const ring=(x,y,rx,ry,label,lx,ly,anchor)=>{const G=H.g(s);
@@ -304,11 +304,11 @@ scene(H){const s=document.getElementById('stage');const k=640/1056;
 
 /* 9 ─────────────────────────────── */
 {sec:'3.3',title:'iPMAT in One Line',caption:'Memory strip · the whole of mitosis',
-text:`<p data-step="0"><b>i · Interphase.</b> The DNA copies itself before mitosis starts.</p>
-<p data-step="1"><b>P · Prophase.</b> The chromosomes pack up. The nucleus breaks down.</p>
-<p data-step="2"><b>M · Metaphase.</b> The chromosomes line up in the middle, in single file.</p>
-<p data-step="3"><b>A · Anaphase.</b> The sister chromatids are pulled apart.</p>
-<p data-step="4"><b>T · Telophase.</b> Two nuclei form. Then cytokinesis splits the cell. The result is two identical 2n cells.</p>`,
+text:`<p data-step="0"><b>i · Interphase.</b> The cell replicates its DNA before mitosis starts.</p>
+<p data-step="1"><b>P · Prophase.</b> The chromosomes condense. The nuclear envelope dissolves.</p>
+<p data-step="2"><b>M · Metaphase.</b> The chromosomes align in single file in the middle of the cell.</p>
+<p data-step="3"><b>A · Anaphase.</b> The sister chromatids separate and move to opposite poles.</p>
+<p data-step="4"><b>T · Telophase.</b> Two nuclei form. Cytokinesis then divides the cell into two identical diploid cells.</p>`,
 star:'iPMAT: Prophase = Pack, Metaphase = Middle, Anaphase = Apart, Telophase = Two.',starStep:4,
 scene(H){const s=document.getElementById('stage');const Y=180,xs=[64,190,320,450,576],R=54;
   const panels=xs.map((x,i)=>{const G=H.g(s);H.O(G,0,{d:0});return G});
@@ -342,12 +342,12 @@ scene(H){const s=document.getElementById('stage');const Y=180,xs=[64,190,320,450
 
 /* 10 ─────────────────────────────── */
 {sec:'3.4',title:'Two Numbers: c and n',caption:'After Fig. 3.4.1 · haploid number = 2 in this model · nuclear envelopes not shown',
-text:`<p data-step="0">Two numbers describe the genetic material in a cell. The <b>c-value</b> (<span class="m">c</span>) is the amount of DNA. The <b>n-value</b> (<span class="m">n</span>) is the number of complete sets of chromosomes.</p>
-<p data-step="0">A <b>gamete</b> (a sperm cell or an egg cell) is haploid. It has <span class="m">1c</span> and <span class="m">1n</span>.</p>
-<p data-step="1"><b>Fertilization.</b> A sperm cell and an egg cell join. The result is a <b>zygote</b>. The zygote is <b>diploid</b>: it has <span class="m">2c</span> and <span class="m">2n</span>.</p>
-<p data-step="2"><b>S phase.</b> The DNA is copied, so the DNA content doubles to <span class="m">4c</span>. But the chromosome number stays <span class="m">2n</span>. The sister chromatids are joined at one centromere, so each replicated chromosome counts as one chromosome.</p>
-<p data-step="3"><b>Mitosis.</b> Each daughter cell gets half of the DNA: one chromatid from each pair. So each daughter cell returns to <span class="m">2c</span> and <span class="m">2n</span>.</p>`,
-star:'c counts DNA. n counts sets. DNA copying changes c, not n.',starStep:2,
+text:`<p data-step="0">Two numbers describe the genetic material of a cell. The <b>c-value</b> (<span class="m">c</span>) is the amount of DNA. The <b>n-value</b> (<span class="m">n</span>) is the number of complete chromosome sets.</p>
+<p data-step="0">A <b>gamete</b> (a sperm cell or an egg cell) is haploid. A gamete has <span class="m">1c</span> and <span class="m">1n</span>.</p>
+<p data-step="1"><b>Fertilization.</b> A sperm cell and an egg cell join and make a <b>zygote</b>. The zygote is diploid: it has <span class="m">2c</span> and <span class="m">2n</span>.</p>
+<p data-step="2"><b>S phase.</b> DNA replication doubles the DNA content to <span class="m">4c</span>. The chromosome number stays <span class="m">2n</span>, because each pair of sister chromatids shares one centromere.</p>
+<p data-step="3"><b>Mitosis.</b> Each daughter cell receives one chromatid of each replicated chromosome, which is half of the DNA. So each daughter cell has <span class="m">2c</span> and <span class="m">2n</span> again.</p>`,
+star:'c counts DNA. n counts sets. DNA replication changes c, not n.',starStep:2,
 scene(H){const s=document.getElementById('stage');const Y=200;
   const cols=[75,230,385,548],heads=['gametes','zygote','after S phase','after mitosis'];
   const hd=cols.map((x,i)=>{const t=H.txt(s,x,46,heads[i].toUpperCase(),'cap',{'text-anchor':'middle'});H.O(t,0,{d:0});return t});
@@ -381,13 +381,13 @@ scene(H){const s=document.getElementById('stage');const Y=200;
 
 /* 11 ─────────────────────────────── */
 {sec:'3.4',title:'Chromosomes or Chromatids?',caption:'2n = 4 model · each black dot is one centromere',
-text:`<p data-step="0">Use this rule: <b>count the centromeres to count the chromosomes</b>. Count the separate DNA molecules to count the chromatids.</p>
-<p data-step="0"><b>G1.</b> Each chromosome is one chromatid. Here: 4 chromosomes, 4 chromatids.</p>
-<p data-step="1"><b>S phase and G2.</b> Each chromosome now has two sister chromatids on one centromere. Here: 4 chromosomes, 8 chromatids.</p>
-<p data-step="2"><b>Anaphase.</b> The centromeres divide. Each chromatid becomes its own chromosome. For a short time, the cell has 8 chromosomes.</p>
-<p data-step="3"><b>End of mitosis.</b> Each daughter cell has 4 chromosomes. Each chromosome has 1 chromatid.</p>
-<div class="qa" data-step="3"><div class="q">Try it. A diploid organism has 2n = 16. How many chromosomes and chromatids does one cell have at the end of G1, S, G2 and mitosis?</div><button>Show answer</button><div class="a" hidden>End of G1: 16 chromosomes, 1 chromatid each (16 chromatids). End of S: 16 chromosomes, 2 chromatids each (32). End of G2: 16 and 32. End of mitosis: 16 chromosomes, 1 chromatid each, in each daughter cell.</div></div>`,
-star:'One centromere = one chromosome, with one or two chromatids.',starStep:0,
+text:`<p data-step="0">Count the centromeres to count the chromosomes. Count the DNA molecules to count the chromatids.</p>
+<p data-step="0"><b>G1.</b> Each chromosome has one chromatid. Model cell: 4 chromosomes, 4 chromatids.</p>
+<p data-step="1"><b>S and G2.</b> Each chromosome has two sister chromatids on one centromere. Model cell: 4 chromosomes, 8 chromatids.</p>
+<p data-step="2"><b>Anaphase.</b> The centromeres divide, so each chromatid becomes a separate chromosome. For a short time, the model cell has 8 chromosomes.</p>
+<p data-step="3"><b>End of mitosis.</b> Each daughter cell has 4 chromosomes with one chromatid each.</p>
+<div class="qa" data-step="3"><div class="q">Practice. A diploid organism has 2n = 16. How many chromosomes and chromatids does one cell have at the end of G1, S, G2 and mitosis?</div><button>Show answer</button><div class="a" hidden>End of G1: 16 chromosomes and 16 chromatids. End of S: 16 chromosomes and 32 chromatids. End of G2: 16 and 32. End of mitosis: 16 and 16 in each daughter cell.</div></div>`,
+star:'One centromere = one chromosome.',starStep:0,
 scene(H){const s=document.getElementById('stage');const CX=215,CY=212;
   const Z=H.cell(s,{x:CX,y:CY,r:150});const ys=[166,196,228,258];
   const ch=[['dad',12],['mom',12],['dad',8],['mom',8]].map(([c,L],i)=>H.chromosome(s,{L1:L,L2:L,w:7,color:c,state:'single',x:CX,y:ys[i]}));
@@ -407,13 +407,14 @@ scene(H){const s=document.getElementById('stage');const CX=215,CY=212;
 
 /* 12 ─────────────────────────────── */
 {sec:'3.4',title:'The Human Numbers',caption:'Tables 3.4.2 and 3.4.3 · Mb = million base pairs · two separate scales',
-text:`<p data-step="0">A human gamete has about 3000 million base pairs of DNA. A <b>base pair</b> is one rung of the DNA ladder. 1 Mb is one million base pairs. So for humans, <span class="m">1c</span> = 3000 Mb.</p>
+text:`<p data-step="0">A human gamete has about 3000 million base pairs of DNA. A <b>base pair</b> is one rung of the DNA ladder, and 1 Mb is one million base pairs. So for humans, <span class="m">1c</span> = 3000 Mb.</p>
 <p data-step="0">A human gamete has 23 chromosomes. So for humans, <span class="m">1n</span> = 23.</p>
 <p data-step="1">A body cell before S phase has <span class="m">2c</span> = 6000 Mb and <span class="m">2n</span> = 46.</p>
-<p data-step="2">After S phase, the cell has <span class="m">4c</span> = 12 000 Mb. The chromosome number stays <span class="m">2n</span> = 46.</p>
-<p data-step="3">After mitosis, each daughter cell has <span class="m">2c</span> = 6000 Mb and <span class="m">2n</span> = 46 again. This is true for the cells of embryos, fetuses, children and adults.</p>
-<p data-step="3" class="note">Example: white blood cells stopped in metaphase each have 4c = 12 000 Mb. Rare exceptions exist, for example some cells that make gametes, and some liver cells that have extra chromosome sets (polyploidy).</p>`,
-star:'Human: 1c = 3000 Mb, 1n = 23. Body cell: 2n = 46 always; c goes 2c → 4c → 2c.',starStep:3,
+<p data-step="2">After S phase, the cell has <span class="m">4c</span> = 12 000 Mb. The chromosome number stays at <span class="m">2n</span> = 46.</p>
+<p data-step="3">After mitosis, each daughter cell has <span class="m">2c</span> = 6000 Mb and <span class="m">2n</span> = 46. The same values apply to the cells of embryos, fetuses, children and adults.</p>
+<p data-step="3" class="note">Table 3.4.1 (slide 13) gives 3200 Mb for the human genome. Calculations often use the round value, 3000 Mb.</p>
+<p data-step="3" class="note">Example: an adult white blood cell in metaphase has 4c = 12 000 Mb. Rare exceptions include some cells that make gametes, and some liver cells with extra chromosome sets (polyploidy).</p>`,
+star:'Human: 1c = 3000 Mb, 1n = 23. Body cell: 2n = 46 before and after S phase; c goes 2c → 4c → 2c.',starStep:3,
 scene(H){const s=document.getElementById('stage');const B=320,HT=220;
   const cats=[['gamete'],['before','S phase'],['after','S phase'],['after','mitosis']];
   const chart=(x0,title,vals,max,ticks,fmt)=>{const G=H.g(s);H.txt(G,x0,52,title,'cap',{st:'fill:var(--ink)'});
@@ -432,11 +433,11 @@ scene(H){const s=document.getElementById('stage');const B=320,HT=220;
 
 /* 13 ─────────────────────────────── */
 {sec:'3.4',title:'Genome Size and the c-Value Paradox',caption:'Table 3.4.1 + §3.4 text · log scale: each grid line is 10× the one before',
-text:`<p data-step="0">The <b>nuclear genome</b> is all the DNA in the nucleus. We measure it as the c-value, in base pairs or in picograms (pg) of DNA.</p>
-<p data-step="0">In general, larger and more complex organisms have more DNA. Compare <i>E. coli</i> (5 Mb) with humans (3200 Mb). The scale is logarithmic, so each grid line is 10 times the one before.</p>
-<p data-step="1">But there are many exceptions. Wheat has about 17 000 Mb, almost 6 times more than humans. The marbled lungfish has about 133 000 Mb, about 40 times more. The amoeba <i>Polychaos dubium</i> has about 670 000 Mb, about 200 times more.</p>
-<p data-step="1">So the amount of DNA does not follow the complexity of the organism. This is the <b>c-value paradox</b>.</p>
-<p data-step="2">Gene number is also a poor guide. A small plant, <i>Arabidopsis</i>, has about 25 000 genes, the same as a human. Chromosome number is a poor guide too: yeast has 16 chromosomes but only 12 Mb of DNA.</p>`,
+text:`<p data-step="0">The <b>nuclear genome</b> is all the DNA in the nucleus. The c-value gives its size in base pairs or in picograms (pg) of DNA.</p>
+<p data-step="0">In general, larger and more complex organisms have more DNA. For example, <i>E. coli</i> has 5 Mb and humans have 3200 Mb. On the logarithmic scale, each grid line is 10 times the previous one.</p>
+<p data-step="1">Many organisms do not follow this rule. Wheat has about 17 000 Mb, almost 6 times the human value. The marbled lungfish has about 133 000 Mb (about 45 times). The amoeba <i>Polychaos dubium</i> has about 670 000 Mb (about 200 times).</p>
+<p data-step="1">So the amount of DNA does not follow the complexity of the organism. Scientists call this mismatch the <b>c-value paradox</b>.</p>
+<p data-step="2">Gene number is also a poor guide. The small plant <i>Arabidopsis</i> has about 25 000 genes, the same number as humans. Chromosome number is a poor guide too: yeast has 16 chromosomes but only 12 Mb of DNA.</p>`,
 star:'More DNA does not mean a more complex organism.',starStep:1,
 scene(H){const s=document.getElementById('stage');const X0=178,W=300,top=58,dy=29;
   const rows=[['Human',3200,23,25000],['Mouse',2600,20,25000],['Fruit fly',140,4,13000],['Arabidopsis (plant)',130,5,25000],['C. elegans (worm)',100,6,19000],['Yeast',12,16,6000],['E. coli (bacterium)',5,1,3200],
@@ -444,7 +445,7 @@ scene(H){const s=document.getElementById('stage');const X0=178,W=300,top=58,dy=2
   let M=4;const xOf=v=>W*Math.log10(v)/M;
   const axisT=H.txt(s,X0+W/2,404,'DNA content per gamete (Mb, 1c)','lbs',{'text-anchor':'middle'});
   const ticks=[0,1,2,3,4,5,6].map(e=>{const G=H.g(s);H.E('line',{x1:0,y1:top-16,x2:0,y2:top+dy*10-8,st:'stroke:var(--faint);stroke-width:1'},G);
-    H.txt(G,0,top+dy*10+10,(10**e).toLocaleString('en-US'),'lbs',{'text-anchor':'middle'});H.T(G,{x:X0+W*e/M},{d:0});if(e>M)H.O(G,0,{d:0});return G});
+    H.txt(G,0,top+dy*10+10,['1','10','10²','10³','10⁴','10⁵','10⁶'][e],'lbs',{'text-anchor':'middle'});H.T(G,{x:X0+W*e/M},{d:0});if(e>M)H.O(G,0,{d:0});return G});
   const R=rows.map((r,i)=>{const y=top+i*dy;const G=H.g(s);const nm=H.txt(G,X0-10,y+5,r[0],'lb',{'text-anchor':'end',st:'font-size:13px'});
     const b=H.E('rect',{x:0,y:y-9,width:1,height:18,cls:'nss',st:`fill:${i>6?'var(--hi)':'var(--ink)'};stroke:var(--ink);stroke-width:${i>6?1.5:0}`},G);H.T(b,{x:X0,sx:.001},{d:0});
     const v=H.txt(G,0,y+5,'','lbs',{st:'fill:var(--ink);font-weight:600'});H.T(v,{x:X0+8},{d:0});H.E('title',{text:`${r[0]}: ${r[1].toLocaleString('en-US')} Mb`},G);
@@ -455,7 +456,7 @@ scene(H){const s=document.getElementById('stage');const X0=178,W=300,top=58,dy=2
   return [
     ()=>{R.slice(0,7).forEach((o,i)=>show(o,o.r[1],lbl(o.r),i*90))},
     ()=>{M=6;rescale();R.slice(0,7).forEach(o=>show(o,o.r[1],lbl(o.r)));
-      const x={7:' · ≈ 5× human',8:' · ≈ 40× human',9:' · ≈ 200× human'};
+      const x={7:' · ≈ 6× human',8:' · ≈ 45× human',9:' · ≈ 200× human'};
       R.slice(7).forEach((o,i)=>{H.O(o.G,1,{at:900+i*250});show(o,o.r[1],o.r[1].toLocaleString('en-US')+' Mb'+x[i+7],900+i*250)})},
     ()=>{axisT.textContent='Estimated number of genes';R.slice(7).forEach(o=>H.O(o.G,.12));
       R.slice(0,7).forEach(o=>show(o,o.r[3],o.r[3].toLocaleString('en-US')+' genes'))},
@@ -463,12 +464,12 @@ scene(H){const s=document.getElementById('stage');const X0=178,W=300,top=58,dy=2
 
 /* 14 ─────────────────────────────── */
 {sec:'3.4',title:'Junk DNA and the Onion Test',caption:'Gene spacing from Table 3.4.1 (average non-coding bp between genes) · onion data from §3.4',
-text:`<p data-step="0">Not all DNA codes for genes. In a small genome, the genes are close together. In a larger genome, long stretches of DNA separate the genes.</p>
-<p data-step="1">Much of this non-gene DNA is <b>transposable elements</b>. These are pieces of DNA that can copy themselves into new places. Other non-gene DNA is short sequences that repeat many times. Scientists often call this DNA “junk DNA”.</p>
-<p data-step="1">This solves the c-value paradox. A large genome usually has more non-gene DNA, not more genes.</p>
-<p data-step="2"><b>The onion test.</b> An onion (<i>Allium cepa</i>) has about 17 pg of DNA per haploid genome. A human has about 3.5 pg. Any proposed function for non-gene DNA must explain why an onion needs about 5 times more of it than a human.</p>
-<p data-step="3">Onion species have from 7 pg to 31.5 pg, but they are similar in complexity. The biologist T. Ryan Gregory named the onion test in 2007. Some writers disagree with it (J. McLatchie, 2011).</p>`,
-star:'Bigger genome = more spacer DNA, not more genes.',starStep:1,
+text:`<p data-step="0">Not all DNA codes for genes. In a small genome, the genes are close together. In a large genome, long stretches of non-gene DNA separate the genes.</p>
+<p data-step="1">Much of the non-gene DNA is <b>transposable elements</b>: DNA segments that can copy themselves into new locations. Other non-gene DNA is short sequences that repeat many times. Scientists often call all of this DNA <b>junk DNA</b>.</p>
+<p data-step="1">Non-gene DNA explains the c-value paradox. Most of the extra DNA in a large genome is non-gene DNA.</p>
+<p data-step="2"><b>The onion test.</b> An onion (<i>Allium cepa</i>) has about 17 pg of DNA per haploid genome. A human has about 3.5 pg. A proposed function for non-gene DNA must explain why an onion needs about 5 times more of it.</p>
+<p data-step="3">Different onion species have from 7 pg to 31.5 pg, but their complexity is similar. The Canadian biologist T. Ryan Gregory proposed the onion test in 2007. Some writers disagree with the test (J. McLatchie, 2011).</p>`,
+star:'Big genome: the extra DNA is mostly non-gene DNA.',starStep:1,
 scene(H){const s=document.getElementById('stage');const x0=40,x1=600;
   const strip=(y,title,sub,genes,junk)=>{const G=H.g(s);H.txt(G,x0,y-24,title,'lb');H.txt(G,x1,y-24,sub,'lbs',{'text-anchor':'end'});
     const ln=H.E('line',{x1:x0,y1:y,x2:x1,y2:y,pathLength:1,cls:'draw',st:'stroke:var(--ink);stroke-width:2'},G);
@@ -497,12 +498,13 @@ scene(H){const s=document.getElementById('stage');const x0=40,x1=600;
 
 /* 15 ─────────────────────────────── */
 {sec:'3.5',title:'How DNA Packs into a Chromosome',caption:'After Fig. 3.5.1 · widths are approximate · 1 nm = one millionth of a millimetre',
-text:`<p data-step="0">Eukaryotic DNA is always wrapped around proteins. The DNA and its proteins pack together in levels. The DNA double helix is about 2 nm wide.</p>
-<p data-step="1">The DNA wraps around proteins called <b>histones</b>. One unit of DNA and histones is a <b>nucleosome</b>. A line of nucleosomes looks like beads on a string.</p>
-<p data-step="2">More histones fold the string into a <b>30 nm fibre</b>.</p>
-<p data-step="3">Scaffold proteins hold the fibre in loops.</p>
-<p data-step="4">At the start of mitosis, the loops pack tightly. The result is the short, thick chromosome that you see in metaphase.</p>
-<p data-step="5">In interphase, a chromosome is mostly a 30 nm fibre. It fits in the nucleus, and enzymes can still reach the DNA. These enzymes make RNA, copy DNA and repair DNA. In mitosis, this work stops and the chromosome condenses more, so that it can move. After mitosis, it returns to the 30 nm fibre.</p>`,
+text:`<p data-step="0">Eukaryotic DNA is always wrapped around proteins. DNA and proteins pack together in levels. The DNA double helix is about 2 nm wide (1 nm is one millionth of a millimetre).</p>
+<p data-step="1">The DNA wraps around proteins called <b>histones</b>. One unit of DNA and histones is a <b>nucleosome</b>. A line of nucleosomes has the shape of beads on a string.</p>
+<p data-step="2">More histones fold the string of nucleosomes into a <b>30 nm fibre</b>.</p>
+<p data-step="3"><b>Scaffold proteins</b> hold the 30 nm fibre in loops.</p>
+<p data-step="4">At the start of mitosis, the loops pack tightly into the short, thick metaphase chromosome.</p>
+<p data-step="5">In interphase, each chromosome is mostly a 30 nm fibre. The fibre fits in the nucleus. Enzymes can still reach the DNA to make RNA, replicate DNA and repair DNA.</p>
+<p data-step="5">In mitosis, the enzyme work stops. The chromosome condenses more, so that it can move to one end of the cell. After mitosis, the chromosome returns to the 30 nm fibre.</p>`,
 star:'Helix → beads → fibre → loops → chromosome.',starStep:5,
 scene(H){const s=document.getElementById('stage');const xs=[58,178,298,428,568],Y0=92,Y1=290;
   const P=xs.map(()=>{const G=H.g(s);H.O(G,0,{d:0});return G});
@@ -539,12 +541,12 @@ scene(H){const s=document.getElementById('stage');const xs=[58,178,298,428,568],
 
 /* 16 ─────────────────────────────── */
 {sec:'3.5',title:'Mom’s and Dad’s Chromosome 1',caption:'After Fig. 3.5.2 · the other 44 chromosomes are not shown',
-text:`<p data-step="0">Each of your body cells has two copies of chromosome 1. One copy is from your mother (<span class="mom">maternal</span>). One copy is from your father (<span class="dad">paternal</span>).</p>
-<p data-step="0"><b>G1.</b> Each chromosome 1 is unreplicated and uncondensed. It is a long thin thread in the nucleus.</p>
-<p data-step="1"><b>G2.</b> Each chromosome 1 is replicated. It has two sister chromatids. It is still uncondensed.</p>
-<p data-step="2"><b>Metaphase.</b> Both are condensed. They line up on the metaphase plate independently. They do <b>not</b> pair with each other.</p>
-<p data-step="3"><b>Anaphase.</b> The sister chromatids of each one separate. After division, each new cell (in G1) has one maternal and one paternal chromosome 1.</p>
-<p data-step="4">In meiosis I, the two homologous chromosomes do pair. This pairing is a key difference between mitosis and meiosis.</p>`,
+text:`<p data-step="0">Each body cell has two copies of chromosome 1. One copy is from the mother (<span class="mom">maternal</span>) and one from the father (<span class="dad">paternal</span>). The two copies are <b>homologous chromosomes</b>.</p>
+<p data-step="0"><b>G1.</b> Each chromosome 1 is unreplicated and uncondensed: a long, thin thread in the nucleus.</p>
+<p data-step="1"><b>G2.</b> Each chromosome 1 is replicated, with two sister chromatids. Both are still uncondensed.</p>
+<p data-step="2"><b>Metaphase.</b> Both chromosomes are condensed. They align on the metaphase plate independently and do <b>not</b> pair.</p>
+<p data-step="3"><b>Anaphase.</b> The sister chromatids of each chromosome separate. After division, each daughter cell starts G1 with one maternal and one paternal chromosome 1.</p>
+<p data-step="4">In meiosis I, homologous chromosomes do pair. Homolog pairing is one of the main differences between meiosis and mitosis.</p>`,
 star:'Mitosis: homologs ignore each other. Meiosis I: homologs pair up.',starStep:4,
 scene(H){const s=document.getElementById('stage');const CX=225,CY=215;
   const Z=H.cell(s,{x:CX,y:CY,r:152});const nuc=H.nucleus(s,CX,CY,108);
@@ -587,57 +589,57 @@ text:`<div class="tblwrap" data-step="0"><table class="tbl">
 </tbody><tbody data-step="3">
 <tr><td>Why it is important</td><td>growth, repair of damaged tissue, new body cells to replace dead cells</td><td>makes the sex cells for sexual reproduction, and makes variation in a population</td></tr>
 </tbody></table></div>`,
-star:'miTosis = my Toes (body cells): 46 → 46. meiOsis = makes Ova and sperm: 46 → 23.',starStep:3},
+star:'miTosis = my Toes (body cells): 46 → 46. meiOsis = makes Ova (egg cells) and sperm: 46 → 23.',starStep:3},
 
 /* 18 ─────────────────────────────── */
 {sec:'3.7–3.8',title:'Summary and Key Terms',wide:true,steps:2,
 text:`<div class="cols" data-step="0"><div><h3>Summary</h3><ul>
-<li>Mitosis passes genetic information from one cell to its daughter cells. It is asexual.</li>
+<li>Mitosis transmits genetic information from a cell to its daughter cells without sex (asexual transmission).</li>
 <li>The stages of mitosis are prophase, metaphase, anaphase and telophase.</li>
-<li>Mitosis halves the c-value of the replicated cell (4c → 2c). It does not change the n-value (2n → 2n).</li>
+<li>Mitosis halves the c-value of a replicated cell (4c to 2c). Mitosis does not change the n-value (2n stays 2n).</li>
 </ul></div><div><h3>&nbsp;</h3><ul>
-<li>The c-value is the DNA in a gamete. Humans: 1c = 3000 Mb. The n-value is the chromosome number in a gamete. Humans: 1n = 23.</li>
-<li>A typical body cell is 2c = 6000 Mb and 2n = 46 before DNA replication. It is 4c = 12 000 Mb and 2n = 46 after.</li>
-<li>Most DNA in higher eukaryotes does not code for genes. So the amount of DNA does not follow complexity: the c-value paradox.</li>
+<li>In humans, 1c = 3000 Mb and 1n = 23.</li>
+<li>Before DNA replication, a human body cell has 2c = 6000 Mb and 2n = 46. After replication, it has 4c = 12 000 Mb and 2n = 46.</li>
+<li>Most DNA in higher eukaryotes does not code for genes. So the amount of DNA does not follow complexity (the c-value paradox).</li>
 </ul></div></div>
 <div data-step="1"><h3>Key terms</h3><div class="terms">
-<div class="term"><b>Cell cycle</b>The repeated pattern of growth (G1, S, G2) and division (M).</div>
-<div class="term"><b>Interphase</b>G1 + S + G2. The time between two divisions.</div>
-<div class="term"><b>G1 phase</b>The first gap phase. The cell grows and does its usual work.</div>
-<div class="term"><b>S phase</b>The synthesis phase. The cell copies its DNA.</div>
-<div class="term"><b>G2 phase</b>The second gap phase. The cell grows and makes proteins for division.</div>
-<div class="term"><b>G0 phase</b>A permanent state in which the cell does not divide (for example, nerve cells).</div>
+<div class="term"><b>Cell cycle</b>The repeated sequence of growth (G1, S, G2) and division (M).</div>
+<div class="term"><b>Interphase</b>G1, S and G2 together: the time between two divisions.</div>
+<div class="term"><b>G1 phase</b>First gap phase. The cell grows and does its usual work.</div>
+<div class="term"><b>S phase</b>Synthesis phase. The cell replicates its DNA.</div>
+<div class="term"><b>G2 phase</b>Second gap phase. The cell grows and makes proteins for division.</div>
+<div class="term"><b>G0 phase</b>A permanent state without division, for example in nerve cells.</div>
 <div class="term"><b>M phase</b>The phase in which the cell divides.</div>
 <div class="term"><b>Mitosis</b>Division of one cell into two genetically identical daughter cells.</div>
-<div class="term"><b>Prophase</b>Chromosomes condense. The nucleus breaks down. The spindle forms.</div>
-<div class="term"><b>Metaphase</b>Chromosomes line up on the metaphase plate.</div>
-<div class="term"><b>Metaphase plate</b>The plane across the middle of the cell where the chromosomes line up.</div>
-<div class="term"><b>Anaphase</b>Sister chromatids separate and move to opposite poles.</div>
-<div class="term"><b>Telophase</b>A nucleus forms around each set of chromosomes.</div>
-<div class="term"><b>Cytokinesis</b>The cytoplasm divides. One cell becomes two cells.</div>
-<div class="term"><b>Chromatids</b>The two identical DNA copies of a replicated chromosome (sister chromatids).</div>
+<div class="term"><b>Prophase</b>The chromosomes condense, the nuclear envelope dissolves and the spindle forms.</div>
+<div class="term"><b>Metaphase</b>The chromosomes align on the metaphase plate.</div>
+<div class="term"><b>Metaphase plate</b>The plane across the middle of the cell where the chromosomes align.</div>
+<div class="term"><b>Anaphase</b>The sister chromatids separate and move to opposite poles.</div>
+<div class="term"><b>Telophase</b>A nuclear envelope forms around each set of chromosomes.</div>
+<div class="term"><b>Cytokinesis</b>Division of the cytoplasm into two daughter cells.</div>
+<div class="term"><b>Chromatids</b>The two identical DNA molecules of a replicated chromosome (sister chromatids).</div>
 <div class="term"><b>Unreplicated chromosome</b>A chromosome with one DNA molecule (one chromatid).</div>
-<div class="term"><b>Replicated chromosome</b>A chromosome with two sister chromatids joined at one centromere.</div>
-<div class="term"><b>Centromere</b>The region that holds the sister chromatids together. One per chromosome.</div>
-<div class="term"><b>Kinetochore</b>The region where microtubules attach. It contains the centromere and proteins.</div>
-<div class="term"><b>Microtubules</b>Thin protein tubes. They make the spindle and move the chromosomes.</div>
-<div class="term"><b>Checkpoint · cyclin · CDK</b>A checkpoint is a control stop. A cyclin activates a CDK enzyme, which moves the cell to the next phase.</div>
+<div class="term"><b>Replicated chromosome</b>A chromosome with two sister chromatids on one centromere.</div>
+<div class="term"><b>Centromere</b>The region that holds sister chromatids together. Each chromosome has one.</div>
+<div class="term"><b>Kinetochore</b>The region where microtubules attach. Contains the centromere and proteins.</div>
+<div class="term"><b>Microtubules</b>Thin protein tubes that make the spindle and move the chromosomes.</div>
+<div class="term"><b>Checkpoint, cyclin, CDK</b>A checkpoint is a control stop. A cyclin activates a CDK enzyme, and the CDK moves the cell to the next phase.</div>
 <div class="term"><b>Nuclear genome</b>All the DNA in the nucleus.</div>
-<div class="term"><b>c-value</b>The amount of DNA in a gamete. Humans: 1c = 3000 Mb.</div>
-<div class="term"><b>n-value</b>The number of chromosomes in a gamete. Humans: 1n = 23.</div>
-<div class="term"><b>c-value paradox</b>The amount of DNA does not follow the complexity of the organism.</div>
-<div class="term"><b>Endoreduplication</b>Repeated S phases with no mitosis, so the DNA amount keeps doubling.</div>
+<div class="term"><b>c-value</b>The amount of DNA in a gamete.</div>
+<div class="term"><b>n-value</b>The number of chromosomes in a gamete.</div>
+<div class="term"><b>c-value paradox</b>The mismatch between the amount of DNA and the complexity of an organism.</div>
+<div class="term"><b>Endoreduplication</b>Repeated S phases without mitosis.</div>
 </div></div>`},
 
 /* 19 ─────────────────────────────── */
 {sec:'3.9–3.10',title:'Check Your Understanding',wide:true,steps:1,
 text:`<div class="grid2" data-step="0">
-<div class="qa"><div class="q">1. Species A has n = 4 chromosomes. Species B has n = 6. Which species has more DNA? Which species has more genes?</div><button>Show answer</button><div class="a" hidden>You cannot tell. Chromosomes are very different in size, so the number of chromosomes does not show the total DNA content. The number of genes does not follow the DNA content closely either.</div></div>
+<div class="qa"><div class="q">1. Species A has n = 4 chromosomes. Species B has n = 6. Which species has more DNA? Which species has more genes?</div><button>Show answer</button><div class="a" hidden>You cannot tell. Chromosomes differ greatly in size, so the number of chromosomes does not show the total DNA content. The number of genes does not follow the DNA content closely either.</div></div>
 <div class="qa"><div class="q">2. Name some chromosome regions that contain few genes.</div><button>Show answer</button><div class="a" hidden>Centromeres; telomeres (the ends of a chromosome); and heterochromatin (tightly packed regions) that contains repetitive DNA.</div></div>
-<div class="qa"><div class="q">3. How many centromeres does a typical chromosome have? What happens if it has two, or none?</div><button>Show answer</button><div class="a" hidden>One. (A rare type, the holocentric chromosome, is an exception.) With two centromeres, the microtubules can pull the two centromeres to opposite poles, so the chromosome breaks. With no centromere, the chromosome cannot move correctly in mitosis or meiosis. Then the daughter cells get the wrong number of chromosomes (aneuploidy).</div></div>
+<div class="qa"><div class="q">3. How many centromeres does a typical chromosome have? What happens if it has two, or none?</div><button>Show answer</button><div class="a" hidden>One. The only exception is a rare type, the holocentric chromosome. With two centromeres, the microtubules can pull the two centromeres to opposite poles, so the chromosome breaks. With no centromere, the chromosome cannot move correctly in mitosis or meiosis. Then the daughter cells get the wrong number of chromosomes (aneuploidy).</div></div>
 <div class="qa"><div class="q">4. A diploid organism has 2n = 16. Give the number of chromosomes and chromatids per cell at the end of G1, S, G2 and mitosis.</div><button>Show answer</button><div class="a" hidden>G1: 16 chromosomes with 1 chromatid each. S: 16 with 2 chromatids each. G2: 16 with 2 chromatids each. Mitosis: 16 with 1 chromatid each, in each daughter cell.</div></div>
 <div class="qa"><div class="q">5. Look at Table 3.4.1 (slide 13). Is there a relation between DNA content, gene number, gene spacing and chromosome number?</div><button>Show answer</button><div class="a" hidden>There is little relation. Larger genomes tend to have more genes, but not always and not in proportion. Larger genomes also tend to have more distance between genes.</div></div>
-<div class="qa"><div class="q">6. Which feature of genomes explains the c-value paradox?</div><button>Show answer</button><div class="a" hidden>Genomes have different amounts of non-coding DNA. This DNA is between the genes, and also inside genes as introns (non-coding parts of a gene).</div></div>
+<div class="qa"><div class="q">6. Which feature of genomes explains the c-value paradox?</div><button>Show answer</button><div class="a" hidden>Genomes have different amounts of non-coding DNA. The non-coding DNA is between the genes, and also inside genes as introns (non-coding parts of a gene).</div></div>
 </div>`},
 
 ]});
