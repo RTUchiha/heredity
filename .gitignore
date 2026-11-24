@@ -1,0 +1,10 @@
+# source PDFs and the per-chapter PDF splits
+*.pdf
+chapters/
+# build / preview intermediates
+__pycache__/
+*.pyc
+*.png
+!slides/src/assets/*.png
+.DS_Store
+.claude/
