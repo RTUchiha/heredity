@@ -422,7 +422,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 2 ─────────────────────────────── */
-{sec:'5.2',title:'Genes Build Pathways',caption:'After Fig. 5.2.1 · a simplified pigment pathway with two enzymes',
+{sec:'5.2',title:'Genes Build Pathways',caption:'a simplified pigment pathway with two enzymes',
 text:`<p data-step="0">The cell reads a gene and makes a <b>protein</b>: a large molecule with one job in the cell. Many proteins are <b>enzymes</b>. An enzyme changes one <b>compound</b> (chemical substance) into a different compound.</p>
 <p data-step="1">A <b>biochemical pathway</b> is a chain of these changes. Each enzyme does one step.</p>
 <p data-step="2">In this simplified flower, enzyme A changes colourless compound 1 into colourless compound 2. Enzyme B changes compound 2 into a purple <b>pigment</b> (a coloured compound). Gene A makes enzyme A, and gene B makes enzyme B.</p>
@@ -519,7 +519,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 5 ─────────────────────────────── */
-{sec:'5.2',title:'Different Genes: Complementation',caption:'After Fig. 5.2.3, Case 2 · blue = from mutant 1 (father) · orange = from mutant 2 (mother)',
+{sec:'5.2',title:'Different Genes: Complementation',caption:'blue = from mutant 1 (father) · orange = from mutant 2 (mother)',
 text:`<p data-step="0">Suppose that explanation 2 is true: mutant 1 is aaBB, and mutant 2 is AAbb. In this model, genes A and B are on one chromosome. The cross is mutant 1 × mutant 2 (× means crossed with).</p>
 <p data-step="1">Each gamete gets one copy of the chromosome. Mutant 1 gives aB. Mutant 2 gives Ab.</p>
 <p data-step="2">A pollen cell and an egg cell join, and the seed grows into an F1 plant. Each F1 plant is AaBb.</p>
@@ -542,7 +542,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 6 ─────────────────────────────── */
-{sec:'5.2',title:'Same Gene: No Complementation',caption:'After Fig. 5.2.3, Case 1 · blue = from mutant 1 (father) · orange = from mutant 3 (mother)',
+{sec:'5.2',title:'Same Gene: No Complementation',caption:'blue = from mutant 1 (father) · orange = from mutant 3 (mother)',
 text:`<p data-step="0">Suppose that explanation 1 is true for a third white mutant, mutant 3. Mutant 1 and mutant 3 are both aa: both have two broken copies of gene A. The DNA change in mutant 3 can be at a different place inside gene A.</p>
 <p data-step="1">Each parent gives one copy of the chromosome to each gamete. In both parents, that copy carries a broken gene A.</p>
 <p data-step="2">The F1 plant is aa, so it has no working copy of gene A. The F1 plant makes no enzyme A. The pathway stops at compound 1, and the flowers are white.</p>
@@ -611,7 +611,7 @@ text:`<p data-step="0">The test needs <b>recessive</b> mutations and true-breedi
 <p data-step="1" class="note">A <b>semi-dominant</b> mutation gives a trait between the wild type and the mutant with one copy. The test fails in the same way.</p>
 <p data-step="2">The test needs two copies of each gene in one cell. A <b>haploid</b> cell has one set of chromosomes, so it has one copy of each gene. In fungi, two <b>strains</b> (lines with the same DNA) can share one cell.</p>
 <p data-step="2">Two haploid yeast cells mate and make one diploid cell. Two <i>Neurospora</i> threads fuse into one cell with nuclei of both strains, a <b>heterokaryon</b>.</p>
-<p data-step="2" class="note">Some books say that haploid organisms such as <i>Neurospora</i> cannot do the test. This is true only for an unfused haploid cell.</p>`,
+<p data-step="2" class="note">An unfused haploid cell cannot do the test, because it has only one copy of each gene.</p>`,
 star:'Recessive mutations, true-breeding parents, two copies in one cell.',starStep:2,
 scene(H){const s=document.getElementById('stage');
   const R1=H.g(s),R2=H.g(s),R3=H.g(s);[R1,R2,R3].forEach(g=>H.O(g,0,{d:0}));
@@ -724,7 +724,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 11 ─────────────────────────────── */
-{sec:'5.3',title:'The Complementation Table',caption:'After Fig. 5.3.1 · a to f are names of mutants · w = white F1 (mutant) · p = purple F1 (wild type)',
+{sec:'5.3',title:'The Complementation Table',caption:'a to f are names of mutants · w = white F1 (mutant) · p = purple F1 (wild type)',
 text:`<p data-step="0">With many mutants, scientists cross each pair of mutants. They record the F1 flower colour of each cross in a table. In this example, six true-breeding white mutants have the names a to f. (These letters are names of mutants, not alleles.)</p>
 <p data-step="1">Each box shows one cross. A <b>w</b> (white F1) means that the two mutations fail to complement. A <b>p</b> (purple F1) means that they complement.</p>
 <p data-step="2">The boxes on the <b>diagonal</b> cross a mutant with itself. Both chromosome copies carry the same broken gene, so the result is always w.</p>
@@ -761,7 +761,7 @@ scene(H){const s=document.getElementById('stage');const N=T51.n,CS=40,X0=84,Y0=9
   ];}},
 
 /* 12 ─────────────────────────────── */
-{sec:'5.3',title:'Complementation Groups',caption:'After Fig. 5.3.1 · the full table, with rows and columns reordered by group',
+{sec:'5.3',title:'Complementation Groups',caption:'the full table, with rows and columns reordered by group',
 text:`<p data-step="0">A <b>complementation group</b> is a set of mutations that fail to complement each other. All the mutations in one group are in the same gene.</p>
 <p data-step="1">Reorder the rows and columns so that the members of each group are next to each other. The w boxes then make square blocks along the diagonal.</p>
 <p data-step="2">The six mutants make three groups: (1) a; (2) b, c and f; (3) d and e. A group can have only one mutation, or it can have many.</p>
@@ -796,7 +796,7 @@ scene(H){const s=document.getElementById('stage');const N=T51.n,CS=40,X0=84,Y0=9
   ];}},
 
 /* 13 ─────────────────────────────── */
-{sec:'5.3',title:'A Double-Hit Strain',caption:'After Fig. 5.3.2 and 5.3.3 · − = no complementation (mutant F1) · + = complementation (wild-type F1) · red badge = broken gene',
+{sec:'5.3',title:'A Double-Hit Strain',caption:'− = no complementation (mutant F1) · + = complementation (wild-type F1) · red badge = broken gene',
 text:`<p data-step="0">Five white mutants, 1 to 5, give this table. The sign − means no complementation (mutant F1). The sign + means complementation (wild-type F1).</p>
 <p data-step="1">Mutants 1 and 2 fail to complement, so both are in gene A. Mutants 3 and 4 complement mutants 1 and 2 and also each other. So they are in two other genes, B and C.</p>
 <p data-step="2">Mutant 5 fails to complement mutant 3 and also mutant 4. One broken gene cannot do that, because 3 and 4 are in different genes. So mutant 5 has broken copies of both gene B and gene C.</p>
@@ -865,7 +865,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 15 ─────────────────────────────── */
-{sec:'5.4',title:'Searching for Auxotrophs',caption:'After Fig. 5.4.1 · Ala, Leu, Cys, Met, Trp, Arg, Val, Tyr = the amino acids alanine, leucine, cysteine, methionine, tryptophan, arginine, valine, tyrosine',
+{sec:'5.4',title:'Searching for Auxotrophs',caption:'Ala, Leu, Cys, Met, Trp, Arg, Val, Tyr = the amino acids alanine, leucine, cysteine, methionine, tryptophan, arginine, valine, tyrosine',
 text:`<p data-step="0">Beadle and Tatum exposed <i>Neurospora</i> <b>spores</b> to X-rays. A spore is a single cell that can grow into a new mould. X-rays damage DNA and change its sequence at random places.</p>
 <p data-step="1">Each treated spore divided many times and made a <b>colony</b>: a group of cells that all descend from one cell. So all the cells of one colony have the same DNA.</p>
 <p data-step="2">Most colonies still grew on minimal medium. Some colonies grew only on <b>complete medium</b> (CM): minimal medium plus amino acids, vitamins and other nutrients. A mutant that needs an extra nutrient is an <b>auxotroph</b>.</p>
@@ -901,7 +901,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 16 ─────────────────────────────── */
-{sec:'5.4',title:'Feeding Past the Block',caption:'After Fig. 5.4.2, Fig. 5.4.3 and Table 5.4.1 · simplified pathway · each row is a different arg⁻ mutant · red line = the broken step',
+{sec:'5.4',title:'Feeding Past the Block',caption:'simplified pathway · each row is a different arg⁻ mutant · red line = the broken step',
 text:`<p data-step="0">In a simplified view, <i>Neurospora</i> makes arginine in three steps. The letters A, B and C start again here, because this is a different pathway. Enzyme A makes <b>ornithine</b> (Orn) from a <b>precursor</b> (a start compound). Enzyme B changes ornithine into <b>citrulline</b> (Cit). Enzyme C changes citrulline into arginine.</p>
 <p data-step="1">In 1944, Adrian Srb and Norman Horowitz grew arg<sup>−</sup> mutants on minimal medium plus one of these compounds. When an added compound makes a mutant grow, the compound <b>rescues</b> the mutant. A compound rescues a mutant when it comes after the broken step.</p>
 <p data-step="2">Gene C mutants grow only on MM + Arg. Their block is at the last step, so only arginine helps.</p>
@@ -930,7 +930,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 17 ─────────────────────────────── */
-{sec:'5.4',title:'Transformation Rescue',caption:'After Table 5.4.2 · photo: E. coli colonies on a dish of solid medium, Gaurav, CC BY 4.0, Wikimedia Commons (the marker lines are on the dish)',
+{sec:'5.4',title:'Transformation Rescue',caption:'photo: E. coli colonies on a dish of solid medium, Gaurav, CC BY 4.0, Wikimedia Commons (the marker lines are on the dish)',
 text:`<p data-step="0">A compound added to the medium is one way to rescue a mutant. <b>Transformation rescue</b> gives the mutant a working copy of the broken gene instead.</p>
 <p data-step="1">Example: in the bacterium <i>E. coli</i>, a<sup>+</sup> is the working allele of gene a, and a<sup>−</sup> is a broken allele. An a<sup>−</sup> strain grows only when the medium has the missing compound. The wild type (a<sup>+</sup>) grows with or without the compound.</p>
 <p data-step="2"><b>Transformation</b>: a cell absorbs DNA from outside the cell. The a<sup>−</sup> cell absorbs a <b>plasmid</b>, a small circle of DNA, that carries a working copy of gene a.</p>
@@ -1040,7 +1040,7 @@ scene(H){const s=document.getElementById('stage');
   ];}},
 
 /* 20 ─────────────────────────────── */
-{sec:'5.4',title:'Selecting the Rescued Cells',caption:'After Fig. 5.4.4 · yellow arc = AntiR gene · green arc = a⁺ gene · grey arc = b⁺ gene',
+{sec:'5.4',title:'Selecting the Rescued Cells',caption:'yellow arc = AntiR gene · green arc = a⁺ gene · grey arc = b⁺ gene',
 text:`<p data-step="0"><b>Step 6.</b> Spread the cells on a <b>plate</b>: a flat dish of solid medium. The plate has minimal medium plus an <b>antibiotic</b>, a drug that kills bacteria.</p>
 <p data-step="1">Every plasmid also carries <b>AntiR</b>, a gene that protects the cell from the antibiotic. So the antibiotic kills every cell without a plasmid.</p>
 <p data-step="2">The host cells are a<sup>−</sup> b<sup>+</sup>. A cell with an a<sup>+</sup> plasmid has a working gene a, so it grows on minimal medium. A cell with a b<sup>+</sup> plasmid or an empty plasmid stays auxotrophic.</p>

@@ -126,7 +126,7 @@ scene(H){const s=$s();
   ];}},
 
 /* 2 ─────────────────────────────── */
-{sec:'4.2',title:'Pedigree Symbols',caption:'After Fig. 4.2.1 · the standard symbols for a pedigree chart',
+{sec:'4.2',title:'Pedigree Symbols',caption:'the standard symbols for a pedigree chart',
 text:`<p data-step="0">A pedigree uses a standard set of symbols. A square is a male. A circle is a female. A diamond is a person of unknown sex.</p>
 <p data-step="1">A filled symbol is an <b>affected</b> person: a person who shows the trait. An empty symbol is an unaffected person.</p>
 <p data-step="2">A half-filled symbol is a <b>carrier</b>: a person with one changed copy of a gene but no trait. A carrier can give the changed copy to a child. A circle with a dot is a female carrier with the changed copy on an X chromosome. The X is one of the two sex chromosomes.</p>
@@ -157,7 +157,7 @@ scene(H){const s=$s();hatchDefs(s);
   ];}},
 
 /* 3 ─────────────────────────────── */
-{sec:'4.2',title:'Lines, Generations and Numbers',caption:'After Fig. 4.2.1 · a four-generation example family',
+{sec:'4.2',title:'Lines, Generations and Numbers',caption:'a four-generation example family',
 text:`<p data-step="0">A horizontal line between a male and a female is a <b>mating line</b>. Where possible, the male is on the left.</p>
 <p data-step="1">A vertical line drops from the mating line to a horizontal <b>sibship line</b>. The children of the couple hang from it in birth order. The oldest child is at the left and the youngest is at the right.</p>
 <p data-step="2">Two mating lines show a <b>consanguineous mating</b>: a mating between close relatives. Here two first cousins have children.</p>
@@ -344,7 +344,7 @@ scene(H){const s=$s();const C1=330,C2=510,ys=[100,174,248];
   ];}},
 
 /* 8 ─────────────────────────────── */
-{sec:'4.3',title:'Autosomal Dominant (AD)',caption:'After Fig. 4.3.1 · A = disease allele (red), a = normal allele',
+{sec:'4.3',title:'Autosomal Dominant (AD)',caption:'A = disease allele (red), a = normal allele',
 text:`<p data-step="0">In <b>autosomal dominant (AD)</b> inheritance, the gene is on an autosome, and one changed copy causes the trait. Examples are Huntington disease, achondroplasia and some forms of polydactyly (extra fingers or toes). A is the disease allele.</p>
 <p data-step="1">An affected parent (Aa) gives A to each child with a probability of 1/2. Sons and daughters have the same probability, because the gene is on an autosome.</p>
 <p data-step="2">Each affected child has an affected parent, so the trait appears in every generation. An affected father can have an affected son. Such <b>male-to-male transmission</b> <b>rules out</b> (shows to be wrong) X-linked inheritance, because a father gives a son his Y.</p>
@@ -417,7 +417,7 @@ scene(H){const s=$s();
   ];}},
 
 /* 10 ─────────────────────────────── */
-{sec:'4.3',title:'Autosomal Recessive (AR)',caption:'After Fig. 4.3.3 · a = disease allele (red) · half-filled = known carrier',
+{sec:'4.3',title:'Autosomal Recessive (AR)',caption:'a = disease allele (red) · half-filled = known carrier',
 text:`<p data-step="0">In <b>autosomal recessive (AR)</b> inheritance, the gene is on an autosome. A person needs two broken copies to show the trait. Cystic fibrosis is an example. Here a is the disease allele.</p>
 <p data-step="1">Two unaffected parents can have an affected child (aa). The child got one a from each parent, so both parents must be carriers (Aa). Unaffected parents with an affected child are the main sign of a recessive trait.</p>
 <p data-step="2">Each child of two carriers is aa with a probability of 1/4. Sons and daughters have the same probability.</p>
@@ -454,7 +454,7 @@ text:`<p data-step="0"><b>Phenylketonuria (PKU)</b> is an AR disease. An <b>enzy
 <p data-step="1">With two broken copies of <i>PAH</i>, the enzyme does not work. Phenylalanine collects in the blood. Without treatment, high phenylalanine harms the brain of the baby and causes intellectual disability.</p>
 <p data-step="2">In many countries, a blood test from the heel of each newborn finds PKU early. A diet low in phenylalanine then prevents the brain damage.</p>
 <p data-step="3">Scientists know more than 1,000 different disease alleles of <i>PAH</i>, each with a different DNA change. So most people with PKU have two different broken alleles. Such a person is a <b>compound heterozygote</b>.</p>
-<p data-step="3" class="note">The textbook lists attached earlobes as an AR trait. A 2017 study of about 75,000 people found 49 DNA regions that affect earlobe attachment.</p>`,
+<p data-step="3" class="note">Earlobe attachment is not a one-gene trait. A 2017 study of about 75,000 people found 49 DNA regions that affect it.</p>`,
 star:'PKU: no enzyme → Phe collects. Test at birth, treat with diet.',starStep:2,
 scene(H){const s=$s();
   const ex=218,ey=108;
@@ -488,7 +488,7 @@ scene(H){const s=$s();
   ];}},
 
 /* 12 ─────────────────────────────── */
-{sec:'4.3',title:'X-Linked Recessive (XR)',caption:'After Fig. 4.3.4 · red X = X with the disease allele · dot = female carrier',
+{sec:'4.3',title:'X-Linked Recessive (XR)',caption:'red X = X with the disease allele · dot = female carrier',
 text:`<p data-step="0">In <b>X-linked recessive (XR)</b> inheritance, the gene is on the X chromosome, and the disease allele is recessive. A female needs two disease alleles. A male needs only one, because he is hemizygous.</p>
 <p data-step="1">An affected father gives his X to every daughter, so all his daughters are carriers. He gives his Y to every son, so no son gets the allele from him.</p>
 <p data-step="2">A carrier mother gives her disease X to each child with a probability of 1/2. So each son is affected with a probability of 1/2. Each daughter is a carrier with a probability of 1/2.</p>
@@ -551,13 +551,13 @@ scene(H){const s=$s();const k=468.7/1280;
   ];}},
 
 /* 14 ─────────────────────────────── */
-{sec:'4.3',title:'X-Linked Dominant (XD)',caption:'After Fig. 4.3.2 · red X = X with the dominant disease allele (for example PHEX)',
+{sec:'4.3',title:'X-Linked Dominant (XD)',caption:'red X = X with the dominant disease allele (for example PHEX)',
 text:`<p data-step="0">In <b>X-linked dominant (XD)</b> inheritance, the gene is on the X chromosome. One changed copy causes the trait in both sexes. Example: X-linked hypophosphatemia. One broken <i>PHEX</i> copy lowers phosphate, a mineral for bones, so the legs bend.</p>
 <p data-step="1">An affected mother is usually heterozygous. As in AD, she gives her changed X to each son or daughter with a probability of 1/2.</p>
 <p data-step="2">An affected father gives his X to every daughter and his Y to every son. So all his daughters are affected, and none of his sons.</p>
 <p data-step="3">A female has two X chromosomes and a male has one, so an XD trait affects about twice as many females. Females often have milder symptoms, because each cell uses only one X.</p>
 <p data-step="4">Two observations rule out XD: an affected father with an affected son, or an affected father with an unaffected daughter. Without such families, XD and AD can look the same.</p>
-<p data-step="4" class="note">Fragile X, the textbook example of XD, breaks the father rule: its repeat grows to full size mainly through mothers.</p>`,
+<p data-step="4" class="note">Fragile X does not follow the father rule. Its repeat grows to full size mainly through mothers.</p>`,
 star:'XD: affected father → all daughters, no sons.',starStep:2,
 scene(H){const s=$s();
   const F=ped(s,{blocks:true,gy:[62,160,258]},[
@@ -679,7 +679,7 @@ text:`<p data-step="0"><b>Variable expressivity</b> means that people with the s
 <p data-step="2">A male has one X. If his X has the long repeat, none of his brain cells makes FMR1 protein. He has intellectual disability.</p>
 <p data-step="3">Early in a female embryo, each cell inactivates one of its two X chromosomes at random (<b>X-inactivation</b>). All cells that descend from that cell keep the same choice. So about half of her cells use the working X.</p>
 <p data-step="4">The mix of cells differs from female to female. Some females with the changed X show no symptoms: incomplete penetrance. Others show mild or clear intellectual disability: variable expressivity.</p>
-<p data-step="4" class="note">The textbook calls fragile X an XD trait. But its repeat grows to full size mainly through mothers, so fragile X breaks the XD father rule.</p>`,
+<p data-step="4" class="note">Fragile X is an X-linked trait that does not follow the XD father rule on slide 14. In fragile X, the repeat reaches full size mainly when a mother transmits the allele.</p>`,
 star:'Same genotype, different degree = variable expressivity.',starStep:4,
 scene(H){const s=$s();
   const E0=H.g(s);H.txt(E0,24,30,'SAME GENOTYPE','cap',{st:'fill:var(--ink)'});
@@ -788,7 +788,7 @@ text:`<p data-step="0">A <b>probability</b> is a number from 0 (never) to 1 (alw
 <p data-step="1"><b>Product rule.</b> The probability that two <b>independent events</b> both happen is the product of their probabilities. Independent means that one event does not change the probability of the other. Three fives in three rolls: 1/6 × 1/6 × 1/6 = 1/216.</p>
 <p data-step="2"><b>Sum rule.</b> The probability that one event or another event happens is the sum of their probabilities. The rule applies when the two events cannot both happen. A five or a six in one roll: 1/6 + 1/6 = 2/6 = 1/3.</p>
 <p data-step="3">Two carriers (Aa × Aa): each parent gives a with a probability of 1/2. Both give a: 1/2 × 1/2 = 1/4. A carrier child is aA or Aa. By the sum rule, a child is a carrier with a probability of 1/4 + 1/4 = 1/2.</p>
-<p data-step="3" class="note">The textbook says that the sum rule is for <i>independent</i> events. The correct condition is that the events cannot both happen (they are mutually exclusive).</p>`,
+<p data-step="3" class="note">Use the sum rule only for events that cannot both happen (<b>mutually exclusive</b> events). Two independent events can both happen, so their probabilities do not add.</p>`,
 star:'AND → multiply. OR → add.',starStep:2,
 scene(H){const s=$s();
   const pip={1:[[0,0]],2:[[-1,-1],[1,1]],3:[[-1,-1],[0,0],[1,1]],4:[[-1,-1],[1,-1],[-1,1],[1,1]],5:[[-1,-1],[1,-1],[0,0],[-1,1],[1,1]],6:[[-1,-1],[1,-1],[-1,0],[1,0],[-1,1],[1,1]]};
@@ -847,7 +847,7 @@ scene(H){const s=$s();
   ];}},
 
 /* 23 ─────────────────────────────── */
-{sec:'4.5',title:'A Worked Pedigree Problem',caption:'After Fig. 4.5.1 · AR disease · numbers name the people · diamond = unborn child',
+{sec:'4.5',title:'A Worked Pedigree Problem',caption:'AR disease · numbers name the people · diamond = unborn child',
 text:`<p data-step="0">The disease is AR. People 5 and 11 are affected. People 12 and 13 ask for the probability that their future child, 14, will be affected. The diamond shows that 14 is not born yet, so its sex is unknown.</p>
 <p data-step="1">People 1, 2, 3 and 4 are unaffected, but each couple has an affected child. So all four are carriers (Aa).</p>
 <p data-step="2">Person 6 is the unaffected brother of an affected person. By the 2/3 rule, 6 is a carrier with a probability of 2/3. For the same reason, 9 is a carrier with a probability of 2/3.</p>
@@ -889,7 +889,7 @@ text:`<div class="tblwrap" data-step="0"><table class="tbl">
 <tr><td>XR</td><td>X · two copies in a female, one in a male</td><td>a male has one X and no second copy</td><td>mostly males</td><td>affected father → carrier daughters · carrier mother → 1/2 of sons affected · no father → son</td><td>hemophilia A and B, red-green colour blindness</td></tr>
 <tr><td>Y-linked</td><td>Y · one copy, males only</td><td>only males have a Y, and every son gets his father’s Y</td><td>males only</td><td>father → every son · never a daughter</td><td>Y-chromosome DNA types that trace male lines</td></tr>
 </tbody></table></div>
-<p class="note" data-step="2">Fragile X syndrome: the textbook calls it XD, but it does not follow the father rule. Its CGG repeat grows to full size mainly when a mother transmits it.</p>`,
+<p class="note" data-step="2">Fragile X syndrome is an exception to the XD father rule. Its CGG repeat grows to full size mainly when a mother transmits it.</p>`,
 star:'Father → son rules out X-linked. Unaffected parents with an affected child mean recessive.',starStep:1},
 
 /* 25 ─────────────────────────────── */
@@ -961,7 +961,7 @@ text:`<div class="terms" data-step="0">
 </div>`},
 
 /* 28 ─────────────────────────────── */
-{sec:'4.8–4.9',title:'Check Your Understanding: 1 and 2',caption:'Study questions 1 and 2 · ? = the father’s parents',
+{sec:'4.8–4.9',title:'Check Your Understanding: 1 and 2',caption:'? = the father’s parents',
 text:`<div class="qa" data-step="0"><div class="q">1. The pedigree shows an unaffected mother, an affected father and three children. Which modes of inheritance fit?</div><button>Show answer</button><div class="a" hidden>AD fits: the father is Aa and gave A to son 1. AR fits only if the mother is a carrier (Aa) and the father is aa. XR fits only if the mother is a carrier, because son 1 got his X from her. The mother is married-in, and Assumption 2 says that she has no disease allele. So AD fits best.<br>XD does not fit: daughter 2 got her father's X, so she would be affected. Y-linked does not fit: son 3 got his father's Y, so he would be affected.</div></div>
 <div class="qa" data-step="1"><div class="q">2. The mode in question 1 is not certain. Which extra data would help to find it?</div><button>Show answer</button><div class="a" hidden>Many answers are possible. If both parents of the father are unaffected, the trait cannot be dominant. If only the father of the father is affected, XR needs the mother of the father to be a carrier. A carrier is unlikely for a rare allele. Suppose son 1 and an unrelated partner have an affected son. Then the X-linked modes do not fit, because a father gives a son his Y.</div></div>`,
 scene(H){const s=$s();
@@ -973,7 +973,7 @@ scene(H){const s=$s();
   return [()=>{},()=>{F.gen(0);H.D(F.p.D.drop,1,{d:800,at:600});H.O(qs,1,{at:700})}];}},
 
 /* 29 ─────────────────────────────── */
-{sec:'4.8–4.9',title:'Check Your Understanding: Question 3',caption:'Study question 3 · four pedigrees, redrawn · one per step',
+{sec:'4.8–4.9',title:'Check Your Understanding: Question 3',caption:'Four pedigrees, one per step',
 text:`<p data-step="0">3. Name the most likely mode of inheritance for each pedigree (AD, AR, XD or XR).</p>
 <div class="qa" data-step="0"><div class="q">3a.</div><button>Show answer</button><div class="a" hidden>The most likely mode is AD. Each affected person has an affected parent, and the trait appears in every generation. Affected people with unaffected married-in partners have affected children. An affected father has an affected son, so the trait is not XD or XR.</div></div>
 <div class="qa" data-step="1"><div class="q">3b.</div><button>Show answer</button><div class="a" hidden>The most likely mode is AR. Two unaffected parents have an affected daughter and an affected son, so the trait is recessive. The affected daughter has an unaffected father, so the trait is not XR. AR needs the married-in father to be a carrier, against Assumption 2, but AR is the only mode that fits.</div></div>

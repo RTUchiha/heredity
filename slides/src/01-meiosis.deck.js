@@ -68,7 +68,7 @@ scene(H){const s=ST();const base=322,k=.68;
   ];}},
 
 /* 2 ─────────────────────────────── */
-{sec:'1.3',title:'Meiosis in Five Moves',caption:'After Fig. 1.3.1 · 2n = 4 model: one long pair and one short pair · blue = from dad, orange = from mom',
+{sec:'1.3',title:'Meiosis in Five Moves',caption:'2n = 4 model: one long pair and one short pair · blue = from dad, orange = from mom',
 text:`<p data-step="0">A <b>meiocyte</b> is a cell that will divide by meiosis. A meiocyte is <b>diploid (2n)</b>: it has two sets of chromosomes, one set from each parent. The two chromosomes of a pair are <b>homologous chromosomes</b>, or <b>homologs</b>. Homologs carry the same genes in the same order.</p>
 <p data-step="1">First, the meiocyte grows and copies its DNA, as a cell does before mitosis. A <b>replicated chromosome</b> has two identical <b>sister chromatids</b>. A <b>centromere</b> holds the two sister chromatids together.</p>
 <p data-step="2">Meiosis then has two divisions. In <b>Meiosis I</b>, each chromosome finds its homolog, and the two homologs pair.</p>
@@ -99,7 +99,7 @@ scene(H){const s=ST();
   ];}},
 
 /* 3 ─────────────────────────────── */
-{sec:'1.3',title:'Prophase I: Homologs Pair',caption:'After Fig. 1.3.5 · one homologous pair, nuclear envelope dashed',
+{sec:'1.3',title:'Prophase I: Homologs Pair',caption:'one homologous pair, nuclear envelope dashed',
 text:`<p data-step="0"><b>Prophase I</b> is the first stage of Meiosis I. Prophase I takes a long time. Biologists divide it into five substages. In <b>leptotene</b>, the replicated chromosomes condense into thin visible threads. The <b>centrosomes</b> (the structures that organize the spindle) move toward the two ends of the cell, the <b>poles</b>.</p>
 <p data-step="1">In <b>zygotene</b>, each chromosome attaches to its homolog along its full length. The attachment is <b>synapsis</b>, and the homologs <b>synapse</b> (synapse means junction). Proteins bind to both homologs and make a protein ladder between them, the <b>synaptonemal complex</b>.</p>
 <p data-step="2">In <b>pachytene</b>, synapsis is complete. The two synapsed homologs form a <b>bivalent</b>. A bivalent has four chromatids, so biologists also call it a <b>tetrad</b>. Crossing over occurs inside the synaptonemal complex.</p>
@@ -135,7 +135,7 @@ scene(H){const s=ST();
   ];}},
 
 /* 4 ─────────────────────────────── */
-{sec:'1.3',title:'Crossing Over',caption:'After Fig. 1.3.6 · gene A/a near the top, gene B/b near the bottom',
+{sec:'1.3',title:'Crossing Over',caption:'gene A/a near the top, gene B/b near the bottom',
 text:`<p data-step="0">In pachytene, the four chromatids of a bivalent lie side by side. Two chromatids from the same homolog are sister chromatids. Two chromatids from different homologs are <b>non-sister chromatids</b>.</p>
 <p data-step="0">An <b>allele</b> is one version of a gene. The blue homolog carries alleles A and B. The orange homolog carries alleles a and b. Homologs carry the same genes, but their alleles can differ.</p>
 <p data-step="1"><b>DNA repair enzymes</b> (proteins that repair DNA) cut two non-sister chromatids. The two cuts are at almost the same location.</p>
@@ -297,7 +297,7 @@ scene(H){const s=ST();const cy=200,X=[170,470];
   ];}},
 
 /* 9 ─────────────────────────────── */
-{sec:'1.3',title:'Counting DNA and Chromosome Sets',caption:'After Fig. 1.3.4 · c = amount of DNA, n = number of chromosome sets',
+{sec:'1.3',title:'Counting DNA and Chromosome Sets',caption:'c = amount of DNA, n = number of chromosome sets',
 text:`<p data-step="0">Two numbers describe the genetic material in a cell. The letter <b>c</b> gives the amount of DNA. The letter <b>n</b> gives the number of complete chromosome sets. A meiocyte in <b>G1</b> (the growth phase before DNA copy) is 2c and 2n.</p>
 <p data-step="1">In S phase, the amount of DNA doubles to 4c. A replicated chromosome is still one chromosome, because it has one centromere. So the cell stays 2n.</p>
 <p data-step="2">Meiosis I separates the homologs. Each cell gets half the DNA (2c) and one set of chromosomes (1n). In humans, 46 chromosomes become 23 per cell.</p>
@@ -328,7 +328,7 @@ scene(H){const s=ST();
   ];}},
 
 /* 10 ─────────────────────────────── */
-{sec:'1.3',title:'From Meiosis to Gametes',caption:'After Fig. 1.3.7 · polar body formation during gamete maturation',
+{sec:'1.3',title:'From Meiosis to Gametes',caption:'polar body formation during gamete maturation',
 text:`<p data-step="0">In animals and plants, the cells from meiosis must mature before they function as gametes.</p>
 <p data-step="1">In male animals, Meiosis I makes two cells of equal size. In female animals, the division is unequal. One cell keeps almost all of the cytoplasm, and the other cell is small.</p>
 <p data-step="2">In male animals, the four cells from meiosis are <b>spermatids</b>. In female animals, the large cell becomes the egg. The three small cells are <b>polar bodies</b>.</p>

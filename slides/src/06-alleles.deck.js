@@ -254,7 +254,7 @@ scene(H){const s=stage();
   ];}},
 
 /* 5 ─────────────────────────────── */
-{sec:'6.2',title:'A Mosaic Eye',caption:'Fig. 6.2.1 · segmental heterochromia, left eye (right of photo) · Jvedral, CC BY-SA 4.0, via Wikimedia Commons',
+{sec:'6.2',title:'A Mosaic Eye',caption:'segmental heterochromia, left eye (right of photo) · Jvedral, CC BY-SA 4.0, via Wikimedia Commons',
 text:`<p data-step="0">The <b>iris</b> is the coloured ring of the eye. In the photo, one iris has a brown patch in a blue-grey ring. This trait is <b>segmental heterochromia</b>.</p>
 <p data-step="1">One possible cause is a somatic mutation in an early pigment cell. That cell divides many times, and all of its descendants carry the mutation. So one patch of the iris makes a different amount of pigment.</p>
 <p data-step="2">An individual with two or more groups of cells with different genotypes is a <b>mosaic</b>. A mutation early in development gives a large patch. A mutation late in development gives a small patch.</p>
@@ -391,7 +391,7 @@ scene(H){const s=stage();
   ];}},
 
 /* 9 ─────────────────────────────── */
-{sec:'6.5',title:'Genes Plus Environment',caption:'Fig. 6.5.1 · tomatoes, Friedrich Haag, CC BY-SA 4.0, via Wikimedia Commons · the curve is a model',
+{sec:'6.5',title:'Genes Plus Environment',caption:'tomatoes, Friedrich Haag, CC BY-SA 4.0, via Wikimedia Commons · the curve is a model',
 text:`<p data-step="0">A <b>multifactorial</b> trait depends on several genes and on the environment. The colour, shape and size of tomatoes are examples. Sunlight, water and soil also change these traits.</p>
 <p data-step="1">The environment adds its own small differences between individuals. These differences fill the gaps between the genetic classes, so the curve becomes smooth.</p>
 <p data-step="2">So phenotype = genotype + environment + interaction. The interaction is the part where the effect of a gene depends on the environment.</p>
@@ -472,7 +472,7 @@ text:`<p data-step="0">In snapdragons and carnations, red × white plants give p
 <p data-step="1">In the simplest model, the R<sup>1</sup> allele makes a working enzyme for red pigment. The R<sup>2</sup> allele makes none. So R<sup>1</sup>R<sup>1</sup> has 100% of the enzyme, R<sup>1</sup>R<sup>2</sup> about 50% and R<sup>2</sup>R<sup>2</sup> 0%.</p>
 <p data-step="2">In this model, the amount of pigment follows the amount of enzyme in a straight line. Half the enzyme makes about half the pigment, so R<sup>1</sup>R<sup>2</sup> flowers are pink.</p>
 <p data-step="3">The heterozygote is between the two homozygotes, so neither allele is completely dominant. Pink × pink gives 1 red : 2 pink : 1 white. Each genotype has its own phenotype, so the phenotype ratio equals the genotype ratio. The alleles still separate into the gametes, as Mendel's law of segregation says. Each gamete gets one of the two alleles.</p>
-<p data-step="3" class="note">Some books write these alleles as R and r. One letter with superscripts (R<sup>1</sup>, R<sup>2</sup>) is better, because neither allele is dominant.</p>`,
+<p data-step="3" class="note">One letter with superscripts (R<sup>1</sup>, R<sup>2</sup>) shows that neither allele is dominant. A capital and a small letter (R and r) would suggest that one allele is dominant.</p>`,
 star:'Incomplete dominance: half the enzyme, half the colour.',starStep:3,
 scene(H){const D=doseScene(H,{top:'R¹R¹',ylab:'red pigment',note:'50% → half colour',f:v=>v,
     rows:[{g:'R^1R^1',a:['R^1','R^1'],ok:[1,1],amt:1,img:'@@asset:snap-red.jpg@@',ph:'red',col:RED},{g:'R^1R^2',a:['R^1','R^2'],ok:[1,0],amt:.5,img:'@@asset:snap-pink.jpg@@',ph:'pink',col:PINK},{g:'R^2R^2',a:['R^2','R^2'],ok:[0,0],amt:0,img:'@@asset:snap-white.jpg@@',ph:'white',col:NOPIG}],
@@ -565,7 +565,7 @@ scene(H){const s=stage();const al=['I^A','I^B','i'];const cx=[262,382,502],cy=[1
   return [()=>{H.O(grid,1)},()=>show(t=>t==='AB'),()=>show(t=>t==='A'||t==='B'),()=>show(t=>t==='O'),()=>{H.O(sum,1)}];}},
 
 /* 15 ─────────────────────────────── */
-{sec:'6.6',title:'Haplosufficient or Haploinsufficient',caption:'After Fig. 6.6.1 (A. J. Hunter, CC BY-SA 4.0) · bar = total function of the two alleles',
+{sec:'6.6',title:'Haplosufficient or Haploinsufficient',caption:'Graph after A. J. Hunter, CC BY-SA 4.0 · bar = total function of the two alleles',
 text:`<p data-step="0">Take a gene with a normal allele A<sup>+</sup> and a broken allele A<sup>−</sup> that makes little or no working product. A <b>loss-of-function</b> allele such as A<sup>−</sup> makes less product, or less active product, than wild type. An A<sup>+</sup>/A<sup>−</sup> heterozygote has a little over 50% of normal function.</p>
 <p data-step="1">For most genes, the cell needs much less than 50%. These genes are <b>haplosufficient</b>: one normal copy is enough. A<sup>+</sup>/A<sup>−</sup> looks normal, so A<sup>−</sup> is recessive.</p>
 <p data-step="2">For some genes, the cell needs more than 50%. These genes are <b>haploinsufficient</b>: one normal copy is not enough. A<sup>+</sup>/A<sup>−</sup> shows the mutant phenotype, so A<sup>−</sup> is dominant or semi-dominant.</p>
@@ -637,7 +637,7 @@ scene(H){const s=stage();
   ];}},
 
 /* 17 ─────────────────────────────── */
-{sec:'6.7',title:'Classes of Mutants: Morphological',caption:'Fig. 6.7.1 · dog breeds, Mary Bloom, American Kennel Club, CC BY-SA 4.0, via Wikimedia Commons',
+{sec:'6.7',title:'Classes of Mutants: Morphological',caption:'dog breeds, Mary Bloom, American Kennel Club, CC BY-SA 4.0, via Wikimedia Commons',
 text:`<p data-step="0">Geneticists sort mutants by their effect into four classes: morphological, lethal, biochemical and conditional. Muller's morphs are a second system, based on the activity of the gene product.</p>
 <p data-step="1"><b>Morphological</b> mutants change the visible form of an organism: its size, shape, colour or number of parts. An example is the curly wing of some fruit flies.</p>
 <p data-step="2">Dog breeds show many morphological differences in body size, coat and the shape of the face. Changes in single genes cause many of these differences.</p>
@@ -702,7 +702,7 @@ scene(H){const s=stage();
   ];}},
 
 /* 19 ─────────────────────────────── */
-{sec:'6.7',title:'Biochemical Mutants',caption:'After Fig. 6.7.3 (Beadle and Tatum data, A. Gathman, CC BY-NC-SA 2.0) · mutant n cannot do step n · + = grows, − = does not grow',
+{sec:'6.7',title:'Biochemical Mutants',caption:'Data of Beadle and Tatum, after A. Gathman, CC BY-NC-SA 2.0 · mutant n cannot do step n · + = grows, − = does not grow',
 text:`<p data-step="0">A <b>biochemical pathway</b> is a chain of reactions. Each step uses one enzyme, and each enzyme is the product of one gene. The bread mould <i>Neurospora</i> makes the amino acid arginine. The last steps of this pathway are ornithine → citrulline → argininosuccinate → arginine.</p>
 <p data-step="1">Beadle and Tatum studied this mould. Wild-type mould is <b>prototrophic</b>: it grows on a minimal medium and makes everything else itself. A minimal medium is food with only sugar, salts and one vitamin.</p>
 <p data-step="2">A <b>biochemical mutant</b> cannot do one step of a pathway. A mutant that needs an extra nutrient, such as arginine, is <b>auxotrophic</b>.</p>
@@ -732,7 +732,7 @@ scene(H){const s=stage();const nx=[50,170,290,410,560],ny=56;const nm=['precurso
   ];}},
 
 /* 20 ─────────────────────────────── */
-{sec:'6.7',title:'Conditional Mutants: The Siamese Cat',caption:'Fig. 6.7.4 · two Siamese cats, Steve Gilham, CC BY-NC-SA 2.0, via Flickr',
+{sec:'6.7',title:'Conditional Mutants: The Siamese Cat',caption:'two Siamese cats, Steve Gilham, CC BY-NC-SA 2.0, via Flickr',
 text:`<p data-step="0"><b>Conditional</b> mutants show the mutant phenotype only under some conditions. Under <b>restrictive</b> conditions, they look mutant. Under <b>permissive</b> conditions, they look wild type. Biochemical mutants are conditional too: the food medium is the condition.</p>
 <p data-step="1">Siamese cats carry a temperature-sensitive allele of the TYR gene. TYR makes tyrosinase, the first enzyme in the pathway that makes the dark pigment melanin.</p>
 <p data-step="2">The mutant enzyme loses its shape and stops working at body temperature. In the cooler ears, face, paws and tail, it keeps its shape and works. So these parts (breeders call them the points) are dark, and the warm body is light.</p>
@@ -977,7 +977,7 @@ text:`<div style="display:flex;flex-direction:column;gap:12px" data-step="0">
 <tr><td>5</td><td>black</td><td>white</td><td>white</td></tr>
 <tr><td>6</td><td>black</td><td>black</td><td>white</td></tr>
 <tr><td>7</td><td>black</td><td>black</td><td>a wide range of greys</td></tr>
-</tbody></table></div></div><button style="justify-self:start">Show answer</button><div class="a" hidden>Take A1 as the allele that makes black pigment.<br><b>1</b> co-dominance: both phenotypes show in one mouse.<br><b>2</b> incomplete dominance: grey is between black and white.<br><b>3</b> incomplete penetrance: only some A2A2 mice show the white phenotype.<br><b>4</b> pleiotropy: the same gene affects colour and hair growth.<br><b>5</b> haploinsufficiency: one A1 copy is not enough for black.<br><b>6</b> haplosufficiency: one A1 copy is enough for black.<br><b>7</b> variable expressivity: the A2A2 phenotype shows at different strengths.<br><span class="note">Some answer keys swap cases 5 and 6. The definitions give the answers above.</span></div></div>
+</tbody></table></div></div><button style="justify-self:start">Show answer</button><div class="a" hidden>Take A1 as the allele that makes black pigment.<br><b>1</b> co-dominance: both phenotypes show in one mouse.<br><b>2</b> incomplete dominance: grey is between black and white.<br><b>3</b> incomplete penetrance: only some A2A2 mice show the white phenotype.<br><b>4</b> pleiotropy: the same gene affects colour and hair growth.<br><b>5</b> haploinsufficiency: one A1 copy is not enough for black.<br><b>6</b> haplosufficiency: one A1 copy is enough for black.<br><b>7</b> variable expressivity: the A2A2 phenotype shows at different strengths.</div></div>
 
 </div>`},
 
