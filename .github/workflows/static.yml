@@ -38,6 +38,10 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      # The artifact list can lag the upload by a few seconds; without this wait,
+      # deploy-pages sometimes fails with "No artifacts named github-pages".
+      - name: Wait for the artifact to register
+        run: sleep 20
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
