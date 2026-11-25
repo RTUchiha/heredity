@@ -117,7 +117,6 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-siz
   .fig{height:min(56vh,440px)}
   .txt{overflow:visible}
   .txt p,.txt li{max-width:none}
-  .hd-r .sec span{display:none}
   .keys{display:none}
   .ft{position:sticky;bottom:0;background:var(--paper);padding-block:8px;grid-template-columns:minmax(0,1fr) auto;}
   .ft .prog{grid-column:1/-1;grid-row:1}
@@ -244,7 +243,7 @@ window.deck=function(cfg){
   let cur={i:-1,k:-1},steps=[],showAll=false;
   function clear(){rafs.forEach(cancelAnimationFrame);rafs.clear();timers.forEach(clearTimeout);timers.clear();stage.innerHTML='';}
   function mount(i){clear();const s=S[i];
-    $('ttl').textContent=s.title;$('sec').innerHTML=`<b>§${s.sec}</b><br><span>Slide ${i+1} of ${S.length}</span>`;
+    $('ttl').textContent=s.title;$('sec').innerHTML=`<b>Slide ${i+1}</b><span> of ${S.length}</span>`;
     $('body').className='body'+(s.wide?' wide':'');$('fig').hidden=!!s.wide;
     $('txt').innerHTML=s.text+(s.star?`<p class="star" data-step="${s.starStep!=null?s.starStep:0}">${s.star}</p>`:'');
     $('cap').textContent=s.caption||'';

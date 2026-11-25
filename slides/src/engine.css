@@ -110,7 +110,6 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-siz
   .fig{height:min(56vh,440px)}
   .txt{overflow:visible}
   .txt p,.txt li{max-width:none}
-  .hd-r .sec span{display:none}
   .keys{display:none}
   .ft{position:sticky;bottom:0;background:var(--paper);padding-block:8px;grid-template-columns:minmax(0,1fr) auto;}
   .ft .prog{grid-column:1/-1;grid-row:1}

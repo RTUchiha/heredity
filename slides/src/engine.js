@@ -105,7 +105,7 @@ window.deck=function(cfg){
   let cur={i:-1,k:-1},steps=[],showAll=false;
   function clear(){rafs.forEach(cancelAnimationFrame);rafs.clear();timers.forEach(clearTimeout);timers.clear();stage.innerHTML='';}
   function mount(i){clear();const s=S[i];
-    $('ttl').textContent=s.title;$('sec').innerHTML=`<b>§${s.sec}</b><br><span>Slide ${i+1} of ${S.length}</span>`;
+    $('ttl').textContent=s.title;$('sec').innerHTML=`<b>Slide ${i+1}</b><span> of ${S.length}</span>`;
     $('body').className='body'+(s.wide?' wide':'');$('fig').hidden=!!s.wide;
     $('txt').innerHTML=s.text+(s.star?`<p class="star" data-step="${s.starStep!=null?s.starStep:0}">${s.star}</p>`:'');
     $('cap').textContent=s.caption||'';
