@@ -5,13 +5,14 @@ SRC = pathlib.Path(__file__).resolve().parent
 OUT = SRC.parent
 FONTS = ("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900"
          "&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@1,400;1,600&display=swap")
+MIME = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "png": "image/png", "svg": "image/svg+xml", "webp": "image/webp"}
 css = (SRC / "engine.css").read_text()
 js = (SRC / "engine.js").read_text()
 
 for deck in sorted(SRC.glob("*.deck.js")):
     body = deck.read_text()
     import base64
-    body = re.sub(r"@@asset:([\w.\-]+)@@", lambda m: "data:image/jpeg;base64," + base64.b64encode((SRC / "assets" / m.group(1)).read_bytes()).decode(), body)
+    body = re.sub(r"@@asset:([\w.\-]+)@@", lambda m: "data:" + MIME[m.group(1).rsplit(".",1)[-1].lower()] + ";base64," + base64.b64encode((SRC / "assets" / m.group(1)).read_bytes()).decode(), body)
     m = re.search(r"docTitle:\s*'([^']+)'", body)
     title = m.group(1) if m else deck.stem
     html = f"""<!doctype html>

@@ -42,13 +42,16 @@ h1{font:900 clamp(56px,11vw,128px)/.9 var(--f-display);letter-spacing:-.03em;mar
 h2{font:800 13px/1.2 var(--f-display);letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px;display:flex;justify-content:space-between;gap:12px}
 h2 span{color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:none;font-family:var(--f-body);font-size:13px}
 
-.live{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:18px}
+.live{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:18px}
 .deck{display:grid;grid-template-rows:auto 1fr auto;gap:14px;border:2px solid var(--ink);border-radius:16px;padding:20px 22px 18px;text-decoration:none;background:var(--card);transition:transform .2s ease,box-shadow .2s ease}
 .deck:hover{transform:translateY(-3px);box-shadow:0 6px 0 var(--ink)}
 .deck:focus-visible{outline:3px solid var(--dad);outline-offset:3px}
 .deck-top{display:flex;align-items:center;gap:14px}
 .tile{flex:none;width:52px;height:52px;border-radius:11px;background:var(--tile);color:var(--tile-ink);display:grid;place-items:center;font:900 26px/1 var(--f-display)}
 .deck h3{font:900 clamp(26px,3vw,34px)/1 var(--f-display);margin:0;letter-spacing:-.01em}
+.deck h3.long{font-size:clamp(20px,1.9vw,24px);padding-top:4px}
+.deck-top>div{min-width:0}
+.deck{min-width:0}
 .deck .sub{font-size:13.5px;color:var(--muted);margin-top:4px}
 .deck svg{width:100%;height:auto;display:block;border-radius:10px;background:var(--wash)}
 .deck ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
@@ -99,26 +102,8 @@ footer p{margin:0 0 6px;max-width:90ch}
 </header>
 
 <section aria-labelledby="ready">
-  <h2 id="ready">Ready now <span>2 pilot decks</span></h2>
+  <h2 id="ready">Ready now <span>5 decks</span></h2>
   <div class="live">
-    <a class="deck" href="slides/03-mitosis.html">
-      <div class="deck-top"><div class="tile">3</div><div><h3>Mitosis</h3><div class="sub">Chapter 3 · The Cell Cycle and Mitosis · 19 slides</div></div></div>
-      <svg viewBox="0 0 400 120" aria-hidden="true">
-        <g fill="none" stroke-linecap="round">
-          <circle cx="60" cy="60" r="40" style="fill:var(--card);stroke:var(--ink)" stroke-width="2.5"/>
-          <path d="M52,40 Q58,60 52,80 M64,40 Q58,60 64,80" style="stroke:var(--dad)" stroke-width="5"/>
-          <path d="M40,46 L80,46" style="stroke:var(--faint)" stroke-width="1"/>
-          <path d="M108,60 L142,60" style="stroke:var(--ink)" stroke-width="2"/><path d="M136,54 L142,60 L136,66" style="stroke:var(--ink)" stroke-width="2"/>
-          <ellipse cx="200" cy="60" rx="50" ry="40" style="fill:var(--card);stroke:var(--ink)" stroke-width="2.5"/>
-          <path d="M178,46 Q172,60 178,74" style="stroke:var(--dad)" stroke-width="5"/><path d="M222,46 Q228,60 222,74" style="stroke:var(--dad)" stroke-width="5"/>
-          <path d="M260,60 L294,60" style="stroke:var(--ink)" stroke-width="2"/><path d="M288,54 L294,60 L288,66" style="stroke:var(--ink)" stroke-width="2"/>
-          <circle cx="330" cy="60" r="30" style="fill:var(--card);stroke:var(--ink)" stroke-width="2.5"/><circle cx="372" cy="60" r="0" />
-          <path d="M330,44 L330,76" style="stroke:var(--dad)" stroke-width="5"/>
-        </g>
-      </svg>
-      <ul><li>cell cycle · checkpoints</li><li>mitosis, stage by stage</li><li>c-value and n-value</li><li>genome size paradox</li><li>DNA packing</li></ul>
-      <div class="go"><span>Open deck</span><b>→</b></div>
-    </a>
     <a class="deck" href="slides/01-meiosis.html">
       <div class="deck-top"><div class="tile">1</div><div><h3>Meiosis</h3><div class="sub">Chapter 1 · §1.3 Meiosis · 14 slides</div></div></div>
       <svg viewBox="0 0 400 120" aria-hidden="true">
@@ -141,6 +126,65 @@ footer p{margin:0 0 6px;max-width:90ch}
       <ul><li>why gametes are haploid</li><li>synapsis · crossing over</li><li>meiosis I vs II</li><li>c and n through meiosis</li><li>eggs, sperm, polar bodies</li></ul>
       <div class="go"><span>Open deck</span><b>→</b></div>
     </a>
+    <a class="deck" href="slides/03-mitosis.html">
+      <div class="deck-top"><div class="tile">3</div><div><h3>Mitosis</h3><div class="sub">Chapter 3 · The Cell Cycle and Mitosis · 19 slides</div></div></div>
+      <svg viewBox="0 0 400 120" aria-hidden="true">
+        <g fill="none" stroke-linecap="round">
+          <circle cx="60" cy="60" r="40" style="fill:var(--card);stroke:var(--ink)" stroke-width="2.5"/>
+          <path d="M52,40 Q58,60 52,80 M64,40 Q58,60 64,80" style="stroke:var(--dad)" stroke-width="5"/>
+          <path d="M40,46 L80,46" style="stroke:var(--faint)" stroke-width="1"/>
+          <path d="M108,60 L142,60" style="stroke:var(--ink)" stroke-width="2"/><path d="M136,54 L142,60 L136,66" style="stroke:var(--ink)" stroke-width="2"/>
+          <ellipse cx="200" cy="60" rx="50" ry="40" style="fill:var(--card);stroke:var(--ink)" stroke-width="2.5"/>
+          <path d="M178,46 Q172,60 178,74" style="stroke:var(--dad)" stroke-width="5"/><path d="M222,46 Q228,60 222,74" style="stroke:var(--dad)" stroke-width="5"/>
+          <path d="M260,60 L294,60" style="stroke:var(--ink)" stroke-width="2"/><path d="M288,54 L294,60 L288,66" style="stroke:var(--ink)" stroke-width="2"/>
+          <circle cx="330" cy="60" r="30" style="fill:var(--card);stroke:var(--ink)" stroke-width="2.5"/><circle cx="372" cy="60" r="0" />
+          <path d="M330,44 L330,76" style="stroke:var(--dad)" stroke-width="5"/>
+        </g>
+      </svg>
+      <ul><li>cell cycle · checkpoints</li><li>mitosis, stage by stage</li><li>c-value and n-value</li><li>genome size paradox</li><li>DNA packing</li></ul>
+      <div class="go"><span>Open deck</span><b>→</b></div>
+    </a>
+    <a class="deck" href="slides/04-pedigrees.html">
+      <div class="deck-top"><div class="tile">4</div><div><h3>Pedigrees</h3><div class="sub">Chapter 4 · Pedigree Analysis · 30 slides</div></div></div>
+      <svg viewBox="0 0 400 120" aria-hidden="true">
+        <g fill="none" stroke-linecap="round" stroke-width="2.5" style="stroke:var(--ink)">
+          <path d="M112,30 L168,30 M140,30 L140,56 M70,56 L330,56 M70,56 L70,72 M140,56 L140,72 M210,56 L210,72 M280,56 L280,72 M330,56 L330,72"/>
+          <rect x="88" y="18" width="24" height="24" style="fill:var(--card)"/><circle cx="180" cy="30" r="12" style="fill:var(--card)"/>
+          <rect x="58" y="72" width="24" height="24" style="fill:var(--ink)"/><circle cx="140" cy="84" r="12" style="fill:var(--card)"/>
+          <circle cx="140" cy="84" r="3.5" style="fill:var(--ink);stroke:none"/>
+          <rect x="198" y="72" width="24" height="24" style="fill:var(--card)"/><circle cx="280" cy="84" r="12" style="fill:var(--ink)"/>
+          <rect x="318" y="72" width="24" height="24" style="fill:var(--card)"/>
+        </g>
+      </svg>
+      <ul><li>pedigree symbols</li><li>AD · AR · XD · XR · Y</li><li>clues that rule a mode out</li><li>Queen Victoria’s haemophilia</li><li>the 2/3 rule</li></ul>
+      <div class="go"><span>Open deck</span><b>→</b></div>
+    </a>
+    <a class="deck" href="slides/05-complementation.html">
+      <div class="deck-top"><div class="tile">5</div><div><h3 class="long">Complementation</h3><div class="sub">Chapter 5 · The Complementation Test · 24 slides</div></div></div>
+      <svg viewBox="0 0 400 120" aria-hidden="true">
+        <g fill="none" stroke-linecap="round">
+          <path d="M60,62 L60,100" style="stroke:#3a8a4a" stroke-width="3"/><circle cx="60" cy="37" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="72" cy="46" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="68" cy="61" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="52" cy="61" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="48" cy="46" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="60" cy="50" r="6" style="fill:var(--hi);stroke:var(--ink)" stroke-width="1.5"/>
+          <path d="M108,46 L124,62 M124,46 L108,62" style="stroke:var(--ink)" stroke-width="2.5"/>
+          <path d="M170,62 L170,100" style="stroke:#3a8a4a" stroke-width="3"/><circle cx="170" cy="37" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="182" cy="46" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="178" cy="61" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="162" cy="61" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="158" cy="46" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="170" cy="50" r="6" style="fill:var(--hi);stroke:var(--ink)" stroke-width="1.5"/>
+          <path d="M214,60 L252,60" style="stroke:var(--ink)" stroke-width="2"/><path d="M246,54 L252,60 L246,66" style="stroke:var(--ink)" stroke-width="2"/>
+          <path d="M300,62 L300,100" style="stroke:#3a8a4a" stroke-width="3"/><circle cx="300" cy="37" r="11" style="fill:#7b3fb5;stroke:var(--ink)" stroke-width="2"/><circle cx="312" cy="46" r="11" style="fill:#7b3fb5;stroke:var(--ink)" stroke-width="2"/><circle cx="308" cy="61" r="11" style="fill:#7b3fb5;stroke:var(--ink)" stroke-width="2"/><circle cx="292" cy="61" r="11" style="fill:#7b3fb5;stroke:var(--ink)" stroke-width="2"/><circle cx="288" cy="46" r="11" style="fill:#7b3fb5;stroke:var(--ink)" stroke-width="2"/><circle cx="300" cy="50" r="6" style="fill:var(--hi);stroke:var(--ink)" stroke-width="1.5"/>
+        </g>
+        <g style="stroke:none"><rect x="43" y="104" width="16" height="10" rx="2" style="fill:var(--faint)"/><rect x="61" y="104" width="16" height="10" rx="2" style="fill:var(--dad)"/><rect x="153" y="104" width="16" height="10" rx="2" style="fill:var(--mom)"/><rect x="171" y="104" width="16" height="10" rx="2" style="fill:var(--faint)"/><rect x="283" y="104" width="16" height="10" rx="2" style="fill:var(--mom)"/><rect x="301" y="104" width="16" height="10" rx="2" style="fill:var(--dad)"/></g>
+      </svg>
+      <ul><li>genes build pathways</li><li>same gene or different?</li><li>complementation tables</li><li>auxotrophs</li><li>transformation rescue</li></ul>
+      <div class="go"><span>Open deck</span><b>→</b></div>
+    </a>
+    <a class="deck" href="slides/06-alleles.html">
+      <div class="deck-top"><div class="tile">6</div><div><h3>Alleles</h3><div class="sub">Chapter 6 · Alleles at a Single Locus · 29 slides</div></div></div>
+      <svg viewBox="0 0 400 120" aria-hidden="true">
+        <g fill="none" stroke-linecap="round">
+          <path d="M80,62 L80,104" style="stroke:#3a8a4a" stroke-width="3"/><circle cx="80" cy="37" r="11" style="fill:#d62f3a;stroke:var(--ink)" stroke-width="2"/><circle cx="92" cy="46" r="11" style="fill:#d62f3a;stroke:var(--ink)" stroke-width="2"/><circle cx="88" cy="61" r="11" style="fill:#d62f3a;stroke:var(--ink)" stroke-width="2"/><circle cx="72" cy="61" r="11" style="fill:#d62f3a;stroke:var(--ink)" stroke-width="2"/><circle cx="68" cy="46" r="11" style="fill:#d62f3a;stroke:var(--ink)" stroke-width="2"/><circle cx="80" cy="50" r="6" style="fill:var(--hi);stroke:var(--ink)" stroke-width="1.5"/><path d="M200,62 L200,104" style="stroke:#3a8a4a" stroke-width="3"/><circle cx="200" cy="37" r="11" style="fill:#f29bb0;stroke:var(--ink)" stroke-width="2"/><circle cx="212" cy="46" r="11" style="fill:#f29bb0;stroke:var(--ink)" stroke-width="2"/><circle cx="208" cy="61" r="11" style="fill:#f29bb0;stroke:var(--ink)" stroke-width="2"/><circle cx="192" cy="61" r="11" style="fill:#f29bb0;stroke:var(--ink)" stroke-width="2"/><circle cx="188" cy="46" r="11" style="fill:#f29bb0;stroke:var(--ink)" stroke-width="2"/><circle cx="200" cy="50" r="6" style="fill:var(--hi);stroke:var(--ink)" stroke-width="1.5"/><path d="M320,62 L320,104" style="stroke:#3a8a4a" stroke-width="3"/><circle cx="320" cy="37" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="332" cy="46" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="328" cy="61" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="312" cy="61" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="308" cy="46" r="11" style="fill:#ffffff;stroke:var(--ink)" stroke-width="2"/><circle cx="320" cy="50" r="6" style="fill:var(--hi);stroke:var(--ink)" stroke-width="1.5"/>
+          <rect x="45" y="96" width="70" height="10" rx="5" style="fill:var(--card);stroke:var(--ink)" stroke-width="1.5"/><rect x="45" y="96" width="70" height="10" rx="5" style="fill:#d62f3a"/><rect x="165" y="96" width="70" height="10" rx="5" style="fill:var(--card);stroke:var(--ink)" stroke-width="1.5"/><rect x="165" y="96" width="35" height="10" rx="5" style="fill:#f29bb0"/><rect x="285" y="96" width="70" height="10" rx="5" style="fill:var(--card);stroke:var(--ink)" stroke-width="1.5"/><rect x="285" y="96" width="0" height="10" rx="5" style="fill:#ffffff"/>
+        </g>
+      </svg>
+      <ul><li>somatic vs germline</li><li>dominance from protein dose</li><li>the ABO enzyme</li><li>Muller’s morphs</li><li>bell curves</li></ul>
+      <div class="go"><span>Open deck</span><b>→</b></div>
+    </a>
   </div>
 </section>
 
@@ -150,9 +194,9 @@ footer p{margin:0 0 6px;max-width:90ch}
     <a class="ch" href="slides/01-meiosis.html"><div class="n">1</div><div><div class="t">Mendel’s First Law and Meiosis</div><div class="s">Dominant and recessive alleles · meiosis · segregation · Punnett squares · test crosses</div><span class="pill ok">§1.3 Meiosis ready</span></div></a>
     <div class="ch"><div class="n">2</div><div><div class="t">Mendel’s Second Law: Independent Assortment</div><div class="s">Two loci · dihybrid crosses · test crosses · probability rules</div><span class="pill later">Planned</span></div></div>
     <a class="ch" href="slides/03-mitosis.html"><div class="n">3</div><div><div class="t">The Cell Cycle and Mitosis</div><div class="s">Cell cycle · mitosis · c-value and n-value · chromosome appearance · mitosis vs meiosis</div><span class="pill ok">Ready · 19 slides</span></div></a>
-    <div class="ch"><div class="n">4</div><div><div class="t">Pedigree Analysis</div><div class="s">Symbols · modes of inheritance · sporadic diseases · probabilities</div><span class="pill later">Planned</span></div></div>
-    <div class="ch"><div class="n">5</div><div><div class="t">The Complementation Test</div><div class="s">Allelism · complementation groups · transformation rescue</div><span class="pill later">Planned</span></div></div>
-    <div class="ch"><div class="n">6</div><div><div class="t">Alleles at a Single Locus</div><div class="s">Somatic vs germline · zygosity · pleiotropy · dominance · Muller’s morphs</div><span class="pill later">Planned</span></div></div>
+    <a class="ch" href="slides/04-pedigrees.html"><div class="n">4</div><div><div class="t">Pedigree Analysis</div><div class="s">Symbols · modes of inheritance · sporadic diseases · probabilities</div><span class="pill ok">Ready · 30 slides</span></div></a>
+    <a class="ch" href="slides/05-complementation.html"><div class="n">5</div><div><div class="t">The Complementation Test</div><div class="s">Allelism · complementation groups · transformation rescue</div><span class="pill ok">Ready · 24 slides</span></div></a>
+    <a class="ch" href="slides/06-alleles.html"><div class="n">6</div><div><div class="t">Alleles at a Single Locus</div><div class="s">Somatic vs germline · zygosity · pleiotropy · dominance · Muller’s morphs</div><span class="pill ok">Ready · 29 slides</span></div></a>
     <div class="ch"><div class="n">7</div><div><div class="t">The Central Dogma: Mutations and Pathways</div><div class="s">Beadle and Tatum · one gene, one enzyme · screens · cystic fibrosis</div><span class="pill later">Planned</span></div></div>
     <div class="ch"><div class="n">8</div><div><div class="t">Gene Interactions</div><div class="s">Epistasis · polygenic inheritance · environment · ratio deviations</div><span class="pill later">Planned</span></div></div>
     <div class="ch"><div class="n">9</div><div><div class="t">Linkage and Recombination Frequency</div><div class="s">Recombination · cis and trans · partial and complete linkage</div><span class="pill later">Planned</span></div></div>
