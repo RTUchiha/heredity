@@ -29,7 +29,8 @@ function count(node,from,to,o){o=o||{};const fmt=o.fmt||(v=>Math.round(v).toLoca
   const d=o.d||900,t0=performance.now()+(o.at||0);
   const f=now=>{const u=Math.min(1,Math.max(0,(now-t0)/d));const s=u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2;
     node.textContent=fmt(from+(to-from)*s);if(u<1){const id=requestAnimationFrame(f);rafs.add(id)}};
-  const id=requestAnimationFrame(f);rafs.add(id);}
+  const id=requestAnimationFrame(f);rafs.add(id);
+  const tid=setTimeout(()=>{timers.delete(tid);node.textContent=fmt(to)},(o.at||0)+d+80);timers.add(tid);}
 function loop(fn){if(REDUCE)return;const t0=performance.now();const f=now=>{fn((now-t0)/1000);const id=requestAnimationFrame(f);rafs.add(id)};const id=requestAnimationFrame(f);rafs.add(id);}
 function txt(p,x,y,s,cls,a){return E('text',Object.assign({x,y,cls:cls||'lb',text:s},a||{}),p)}
 function g(p,a){return E('g',a,p)}
